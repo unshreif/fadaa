@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Particle.js configuration
     particlesJS("particles-js", {
         "particles": {
             "number": {

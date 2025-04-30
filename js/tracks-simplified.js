@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize particles
     if (typeof particlesJS !== 'undefined') {
         particlesJS("particles-js", {
             "particles": {
@@ -49,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Initial GSAP animations
     gsap.from('.tracks-header h1', {
         y: 30,
         opacity: 0,
@@ -66,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
         ease: "power3.out"
     });
     
-    // Hover effects for cards
     const trackCards = document.querySelectorAll('.track-card');
     trackCards.forEach(card => {
         card.addEventListener('mouseenter', () => {

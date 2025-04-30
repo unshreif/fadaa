@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize particles
     if (typeof particlesJS !== 'undefined') {
         particlesJS("particles-js", {
             "particles": {
@@ -49,10 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // GSAP Animations
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animate code lines with a typing effect
     const codeLines = document.querySelectorAll('.code-line');
     codeLines.forEach((line, index) => {
         gsap.from(line, {
@@ -64,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Hero section animations
     gsap.from('.tech-badge', {
         y: -50,
         opacity: 0,
@@ -96,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
         ease: "power3.out"
     });
 
-    // Animate countdown timer
     gsap.from('.time-block', {
         scale: 0.8,
         opacity: 0,
@@ -106,7 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
         ease: "back.out(1.7)"
     });
 
-    // Animate form and social links
     gsap.from('.notification-form', {
         y: 30,
         opacity: 0,
