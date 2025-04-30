@@ -1,0 +1,130 @@
+/* DevOps Track Specific Styles */
+
+:root {
+  --devops-primary: #4facfe;
+  --devops-secondary: #00f2fe;
+  --devops-gradient: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* Override highlight color */
+.highlight {
+  color: var(--devops-primary);
+}
+
+/* Override accent line */
+.accent-line {
+  background: var(--devops-gradient);
+}
+
+/* Override icon wrapper */
+.icon-wrapper {
+  background: var(--devops-gradient);
+  box-shadow: 0 15px 30px rgba(79, 172, 254, 0.3);
+}
+
+/* Override meta item icons */
+.meta-item i {
+  color: var(--devops-primary);
+}
+
+/* Override enroll button */
+.enroll-btn {
+  background: var(--devops-gradient);
+  box-shadow: 0 10px 20px rgba(79, 172, 254, 0.3);
+}
+
+.enroll-btn:hover {
+  box-shadow: 0 15px 30px rgba(79, 172, 254, 0.4);
+}
+
+/* Override tags */
+.tag {
+  background: rgba(79, 172, 254, 0.1);
+  border: 1px solid rgba(79, 172, 254, 0.3);
+  color: var(--devops-primary);
+}
+
+/* Override stats */
+.stat-card {
+  background: rgba(79, 172, 254, 0.05);
+  border: 1px solid rgba(79, 172, 254, 0.2);
+}
+
+.stat-value {
+  color: var(--devops-primary);
+}
+
+/* Override roadmap line */
+.roadmap:before {
+  background: rgba(79, 172, 254, 0.3);
+}
+
+.phase-number {
+  background: rgba(79, 172, 254, 0.1);
+  border: 2px solid rgba(79, 172, 254, 0.5);
+  color: var(--devops-primary);
+}
+
+.topic i {
+  color: var(--devops-primary);
+}
+
+/* Override course icons */
+.course-icon {
+  background: rgba(79, 172, 254, 0.1);
+}
+
+.course-icon i {
+  color: var(--devops-primary);
+}
+
+.course-tag {
+  background: rgba(79, 172, 254, 0.1);
+  color: var(--devops-primary);
+}
+
+.detail-item i {
+  color: var(--devops-primary);
+}
+
+.course-btn {
+  border: 1px solid var(--devops-primary);
+  color: var(--devops-primary);
+}
+
+.course-btn:hover {
+  background: rgba(79, 172, 254, 0.1);
+}
+
+/* Override CTA section */
+.cta-wrapper {
+  border: 1px solid rgba(79, 172, 254, 0.2);
+  background-image: radial-gradient(circle at top right, rgba(79, 172, 254, 0.1), transparent 70%);
+}
+
+.btn-primary {
+  background: var(--devops-gradient);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 20px rgba(79, 172, 254, 0.3);
+}
+
+.btn-outline {
+  border: 1px solid var(--devops-primary);
+  color: var(--devops-primary);
+}
+
+.btn-outline:hover {
+  background: rgba(79, 172, 254, 0.1);
+}
+
+/* Override particles */
+#particles-js {
+  --particle-color: var(--devops-primary);
+}
+
+/* DevOps specific code block styling */
+.code-snippet code {
+  color: #00f2fe;
+}

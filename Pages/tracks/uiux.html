@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UI/UX Design Track - Create beautiful interfaces and seamless user experiences">
+    <meta name="keywords" content="UI design, UX design, interface design, user experience, Figma, Adobe XD">
+    <meta name="author" content="FADA'">
+    
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0a192f">
+    
+    <title>UI/UX Design | FADA' Learning Paths</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="UI/UX Design Track | FADA'">
+    <meta property="og:description" content="Create beautiful interfaces and seamless user experiences">
+    <meta property="og:image" content="../../images/og-image.jpg">
+    <meta property="og:url" content="https://fadacode.com/tracks/uiux">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Preconnect to External Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../css/track-detail.css">
+    <link rel="stylesheet" href="../../css/uiux-track.css">
+    
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Particle Effects -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js" class="particles-container"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-logo">
+            <div class="logo-text">FADA'</div>
+        </div>
+        <div class="nav-links">
+            <a href="../../index.html" class="nav-link"><span>Home</span></a>
+            <a href="../about.html" class="nav-link"><span>About</span></a>
+            <a href="../get-started.html" class="nav-link"><span>Get Started</span></a>
+            <a href="#" class="nav-link"><span>Contact</span></a>
+            <div class="cta-group">
+                <button class="cta-button">
+                    <span>Join Now</span>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="track-hero">
+        <div class="tech-background">
+            <div class="code-snippet">
+                <pre><code>.card {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333333;
+}</code></pre>
+            </div>
+        </div>
+        <div class="track-container">
+            <div class="track-header">
+                <div class="track-badge">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                </div>
+                <h1>UI/UX Design</h1>
+                <div class="accent-line"></div>
+                <p class="track-tagline">Create beautiful interfaces and seamless user experiences that people love</p>
+                
+                <div class="track-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>12 Weeks</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>15 Projects</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificate</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+                
+                <div class="enroll-now">
+                    <button class="enroll-btn">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track Overview -->
+    <section class="track-overview">
+        <div class="track-container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <h2>Track <span class="highlight">Overview</span></h2>
+                    <p>UI/UX Design combines visual design with user experience research to create digital products that are both beautiful and functional. This track will teach you how to design intuitive interfaces, conduct user research, build prototypes, and create comprehensive design systems.</p>
+                    
+                    <p>You'll master design tools like Figma and Adobe XD, learn fundamental design principles, understand user psychology, and develop skills in wireframing, prototyping, and usability testing. By the end of this track, you'll be able to create compelling digital experiences that solve real user problems.</p>
+                    
+                    <div class="skill-tags">
+                        <div class="tag">Figma</div>
+                        <div class="tag">Adobe XD</div>
+                        <div class="tag">User Research</div>
+                        <div class="tag">Wireframing</div>
+                        <div class="tag">Prototyping</div>
+                        <div class="tag">Visual Design</div>
+                        <div class="tag">Design Systems</div>
+                        <div class="tag">Usability Testing</div>
+                    </div>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">94%</div>
+                        <div class="stat-label">Completion Rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">$78K</div>
+                        <div class="stat-label">Avg. Starting Salary</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">18+</div>
+                        <div class="stat-label">Industry Partners</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Roadmap -->
+    <section class="roadmap-section">
+        <div class="track-container">
+            <h2>Learning <span class="highlight">Roadmap</span></h2>
+            <p class="section-intro">Your step-by-step journey to becoming a UI/UX designer</p>
+            
+            <div class="roadmap">
+                <!-- Phase 1 -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">01</div>
+                        <h3>Design Fundamentals</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Master the essential principles and elements of visual design that form the foundation of all great interfaces.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Color Theory</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Typography</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Layout & Composition</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Visual Hierarchy</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Design Tools Introduction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phase 2 -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">02</div>
+                        <h3>User Experience Research</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Learn methods to understand user needs, behaviors, and motivations to inform your design decisions.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>User Research Methods</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Personas & User Journeys</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Information Architecture</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>User Flows</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Competitive Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phase 3 -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">03</div>
+                        <h3>Interface Design</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Create compelling, usable interfaces with advanced tools and understand interaction design principles.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Wireframing</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>UI Components & Patterns</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Figma Advanced Techniques</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Micro-interactions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phase 4 -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">04</div>
+                        <h3>Professional Practice</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Develop the advanced skills needed to work professionally in the design industry.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Design Systems</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Prototyping & Animation</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Usability Testing</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Collaboration with Developers</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Portfolio Building</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section">
+        <div class="track-container">
+            <h2>Track <span class="highlight">Courses</span></h2>
+            <p class="section-intro">Comprehensive curriculum designed by industry experts</p>
+            
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Beginner</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 3 weeks</span>
+                        </div>
+                    </div>
+                    <h3>Visual Design Fundamentals</h3>
+                    <p>Master the core principles of visual design including color theory, typography, layout, and composition.</p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <span>12 Lessons</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>5 Projects</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate</span>
+                        </div>
+                    </div>
+                    <a href="#" class="course-btn">View Syllabus</a>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Intermediate</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 3 weeks</span>
+                        </div>
+                    </div>
+                    <h3>User Research & UX Design</h3>
+                    <p>Learn techniques to understand user needs and behaviors, create personas, and map user journeys.</p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <span>10 Lessons</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>3 Projects</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate</span>
+                        </div>
+                    </div>
+                    <a href="#" class="course-btn">View Syllabus</a>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fab fa-figma"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Intermediate</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                        </div>
+                    </div>
+                    <h3>Figma Masterclass</h3>
+                    <p>Master Figma for UI design, including advanced components, auto layout, variables, and design systems.</p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <span>15 Lessons</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>4 Projects</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate</span>
+                        </div>
+                    </div>
+                    <a href="#" class="course-btn">View Syllabus</a>
+                </div>
+                
+                <!-- Course 4 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-th-large"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Advanced</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 3 weeks</span>
+                        </div>
+                    </div>
+                    <h3>Design Systems</h3>
+                    <p>Create comprehensive design systems that ensure consistency across products while enabling rapid development.</p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <span>12 Lessons</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>3 Projects</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate</span>
+                        </div>
+                    </div>
+                    <a href="#" class="course-btn">View Syllabus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="track-container">
+            <h2>Real-world <span class="highlight">Projects</span></h2>
+            <p class="section-intro">Build a professional portfolio with these hands-on projects</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/mobile-app-design.jpg')">
+                        <div class="project-level">Advanced</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mobile App Redesign</h3>
+                        <p>Conduct research and redesign a mobile app to improve usability and visual appeal based on user feedback.</p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>User Research</span>
+                            <span>UI Design</span>
+                            <span>Prototyping</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/design-system.jpg')">
+                        <div class="project-level">Advanced</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Design System Creation</h3>
+                        <p>Develop a complete design system with components, guidelines, and documentation for a digital product.</p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Component Design</span>
+                            <span>Documentation</span>
+                            <span>Style Guide</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/ecommerce-ux.jpg')">
+                        <div class="project-level">Intermediate</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce UX Improvement</h3>
+                        <p>Analyze and optimize the user experience of an e-commerce platform to increase conversion rates.</p>
+                        <div class="project-tech">
+                            <span>User Testing</span>
+                            <span>Analytics</span>
+                            <span>Wireframing</span>
+                            <span>UI Design</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Outcomes Section -->
+    <section class="career-section">
+        <div class="track-container">
+            <h2>Career <span class="highlight">Outcomes</span></h2>
+            <p class="section-intro">Where this skillset can take your career</p>
+            
+            <div class="careers-grid">
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>UI Designer</h3>
+                    <p>Create visually appealing interfaces focusing on layout, typography, color, and overall aesthetic.</p>
+                    <div class="salary-range">
+                        <span>$65,000 - $110,000</span>
+                    </div>
+                </div>
+                
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>UX Designer</h3>
+                    <p>Focus on the complete user journey, conducting research and creating wireframes and user flows.</p>
+                    <div class="salary-range">
+                        <span>$70,000 - $120,000</span>
+                    </div>
+                </div>
+                
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Product Designer</h3>
+                    <p>Combine UI, UX, and product thinking to shape digital products from concept to launch.</p>
+                    <div class="salary-range">
+                        <span>$80,000 - $140,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enroll CTA -->
+    <section class="enroll-cta">
+        <div class="track-container">
+            <div class="cta-wrapper">
+                <div class="cta-content">
+                    <h2>Ready to Become a <span class="highlight">UI/UX Designer?</span></h2>
+                    <p>Join thousands of students who have successfully transformed their careers through our comprehensive UI/UX design track.</p>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn-primary">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-outline">
+                        <span>Download Syllabus</span>
+                        <i class="fas fa-file-download"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom animations -->
+    <script src="../../js/animations.js"></script>
+    <script src="../../js/track-detail.js"></script>
+</body>
+</html>

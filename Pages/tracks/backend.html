@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Backend Development Track - Build robust server-side applications, APIs and database systems">
+    <meta name="keywords" content="backend, web development, Node.js, Python, databases, API">
+    <meta name="author" content="FADA'">
+    
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#0a192f">
+    
+    <title>Backend Development | FADA' Learning Paths</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Backend Development Track | FADA'">
+    <meta property="og:description" content="Build robust server-side applications, APIs and database systems">
+    <meta property="og:image" content="../../images/og-image.jpg">
+    <meta property="og:url" content="https://fadacode.com/tracks/backend">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Preconnect to External Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../css/track-detail.css">
+    <link rel="stylesheet" href="../../css/backend-track.css">
+    
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Particle Effects -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js" class="particles-container"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-logo">
+            <div class="logo-text">FADA'</div>
+        </div>
+        <div class="nav-links">
+            <a href="../../index.html" class="nav-link"><span>Home</span></a>
+            <a href="../about.html" class="nav-link"><span>About</span></a>
+            <a href="../get-started.html" class="nav-link"><span>Get Started</span></a>
+            <a href="#" class="nav-link"><span>Contact</span></a>
+            <div class="cta-group">
+                <button class="cta-button">
+                    <span>Join Now</span>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="track-hero">
+        <div class="tech-background">
+            <div class="code-snippet">
+                <pre><code>const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/api/data', (req, res) => {
+  res.json({ message: 'Backend API' });
+});
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});</code></pre>
+            </div>
+        </div>
+        <div class="track-container">
+            <div class="track-header">
+                <div class="track-badge">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-database"></i>
+                    </div>
+                </div>
+                <h1>Backend Development</h1>
+                <div class="accent-line"></div>
+                <p class="track-tagline">Build powerful server-side applications, APIs, and database systems</p>
+                
+                <div class="track-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>14 Weeks</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>18 Projects</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificate</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+                
+                <div class="enroll-now">
+                    <button class="enroll-btn">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track Overview -->
+    <section class="track-overview">
+        <div class="track-container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <h2>Track <span class="highlight">Overview</span></h2>
+                    <p>Backend development focuses on server-side applications, databases, and the logic that powers web applications. This track will teach you how to build robust APIs, manage databases, handle authentication, and implement complex business logic.</p>
+                    
+                    <p>You'll learn key programming languages like Node.js and Python, understand database design principles, and master the creation of RESTful and GraphQL APIs. By the end of this track, you'll be able to develop scalable, efficient backend systems that handle data and requests securely and reliably.</p>
+                    
+                    <div class="skill-tags">
+                        <div class="tag">Node.js</div>
+                        <div class="tag">Python</div>
+                        <div class="tag">MongoDB</div>
+                        <div class="tag">SQL</div>
+                        <div class="tag">REST APIs</div>
+                        <div class="tag">GraphQL</div>
+                        <div class="tag">Authentication</div>
+                        <div class="tag">Server Architecture</div>
+                    </div>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">92%</div>
+                        <div class="stat-label">Completion Rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">$80K</div>
+                        <div class="stat-label">Avg. Starting Salary</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">12+</div>
+                        <div class="stat-label">Industry Partners</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Roadmap -->
+    <section class="roadmap-section">
+        <div class="track-container">
+            <h2>Learning <span class="highlight">Roadmap</span></h2>
+            <p class="section-intro">Your step-by-step journey to becoming a backend developer</p>
+            
+            <div class="roadmap">
+                <!-- Phase 1 -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">01</div>
+                        <h3>Programming Fundamentals</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Build a strong foundation in server-side programming languages and basic web concepts.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>JavaScript/Node.js Fundamentals</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Python Basics</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Web Servers & HTTP</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Command Line & Git</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Package Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phase 2 -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">02</div>
+                        <h3>Databases & Data Modeling</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Learn how to design, query, and optimize both SQL and NoSQL databases for your applications.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Relational Database Design</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>SQL & PostgreSQL</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>NoSQL & MongoDB</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>ORMs & ODMs</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Database Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phase 3 -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">03</div>
+                        <h3>API Development</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Master the design and implementation of robust, scalable APIs using modern frameworks.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>RESTful API Design</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Express.js Framework</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Flask/FastAPI (Python)</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>GraphQL APIs</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>API Documentation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phase 4 -->
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">04</div>
+                        <h3>Advanced Backend Concepts</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Explore advanced topics for building secure, scalable, production-ready applications.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Authentication & Authorization</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Microservices Architecture</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Testing & TDD</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Deployment & DevOps Basics</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Caching & Performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section">
+        <div class="track-container">
+            <h2>Track <span class="highlight">Courses</span></h2>
+            <p class="section-intro">Comprehensive curriculum designed by industry experts</p>
+            
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Beginner</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 3 weeks</span>
+                        </div>
+                    </div>
+                    <h3>Node.js Fundamentals</h3>
+                    <p>Learn the core concepts of Node.js including asynchronous programming, event loops, and building server applications.</p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <span>14 Lessons</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>5 Projects</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate</span>
+                        </div>
+                    </div>
+                    <a href="#" class="course-btn">View Syllabus</a>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Intermediate</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                        </div>
+                    </div>
+                    <h3>Database Systems</h3>
+                    <p>Master both SQL and NoSQL databases, including data modeling, optimization, and integration with backend applications.</p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <span>16 Lessons</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>4 Projects</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate</span>
+                        </div>
+                    </div>
+                    <a href="#" class="course-btn">View Syllabus</a>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Intermediate</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 3 weeks</span>
+                        </div>
+                    </div>
+                    <h3>RESTful API Development</h3>
+                    <p>Design and build scalable, secure REST APIs using Express.js, with proper error handling and validation.</p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <span>12 Lessons</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>4 Projects</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate</span>
+                        </div>
+                    </div>
+                    <a href="#" class="course-btn">View Syllabus</a>
+                </div>
+                
+                <!-- Course 4 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Advanced</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                        </div>
+                    </div>
+                    <h3>Authentication & Security</h3>
+                    <p>Implement secure user authentication, authorization systems, and protect applications from common security threats.</p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <span>15 Lessons</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>5 Projects</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate</span>
+                        </div>
+                    </div>
+                    <a href="#" class="course-btn">View Syllabus</a>
+                </div>
+                
+                <!-- Course 5 - NEW -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Intermediate</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 3 weeks</span>
+                        </div>
+                    </div>
+                    <h3>Python Backend Development</h3>
+                    <p>Build powerful web applications using Python with Flask and FastAPI frameworks for high-performance APIs.</p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <span>12 Lessons</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>4 Projects</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate</span>
+                        </div>
+                    </div>
+                    <a href="#" class="course-btn">View Syllabus</a>
+                </div>
+                
+                <!-- Course 6 - NEW -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Advanced</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 3 weeks</span>
+                        </div>
+                    </div>
+                    <h3>GraphQL API Development</h3>
+                    <p>Master building flexible and efficient GraphQL APIs that give clients precise control over the data they fetch.</p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <span>10 Lessons</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>3 Projects</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate</span>
+                        </div>
+                    </div>
+                    <a href="#" class="course-btn">View Syllabus</a>
+                </div>
+                
+                <!-- Course 7 - NEW -->
+                <div class="course-card special-course">
+                    <div class="course-header">
+                        <div class="course-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Advanced</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 2 weeks</span>
+                        </div>
+                    </div>
+                    <h3>Real-time Applications with WebSockets</h3>
+                    <p>Learn to build real-time features like chat, notifications, and live updates using WebSockets and Socket.io.</p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-book"></i>
+                            <span>8 Lessons</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>2 Projects</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certificate</span>
+                        </div>
+                    </div>
+                    <div class="course-ribbon">New</div>
+                    <a href="#" class="course-btn">View Syllabus</a>
+                </div>
+            </div>
+            
+            <div class="courses-note">
+                <i class="fas fa-info-circle"></i>
+                <p>All courses include hands-on projects, code reviews, and one-on-one mentoring sessions with industry experts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="track-container">
+            <h2>Real-world <span class="highlight">Projects</span></h2>
+            <p class="section-intro">Build a professional portfolio with these hands-on projects</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/rest-api.jpg')">
+                        <div class="project-level">Beginner</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>RESTful API Service</h3>
+                        <p>Create a complete REST API for a resource management system with proper routes, controllers, and data validation.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/database.jpg')">
+                        <div class="project-level">Intermediate</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Database</h3>
+                        <p>Design and implement a complete database system for an e-commerce platform with optimized queries and indexing.</p>
+                        <div class="project-tech">
+                            <span>PostgreSQL</span>
+                            <span>Database Design</span>
+                            <span>SQL</span>
+                            <span>Performance Tuning</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/auth-system.jpg')">
+                        <div class="project-level">Advanced</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Authentication System</h3>
+                        <p>Build a secure authentication system with social login, role-based access control, and password recovery.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>JWT</span>
+                            <span>OAuth</span>
+                            <span>Security Best Practices</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/microservices.jpg')">
+                        <div class="project-level">Advanced</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Microservices Architecture</h3>
+                        <p>Develop a system of microservices that communicate through APIs and message queues for a scalable application.</p>
+                        <div class="project-tech">
+                            <span>Docker</span>
+                            <span>Microservices</span>
+                            <span>RabbitMQ</span>
+                            <span>API Gateway</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 - NEW -->
+                <div class="project-card featured-project">
+                    <div class="project-img" style="background-image: url('../../images/projects/real-time-dashboard.jpg')">
+                        <div class="project-level">Advanced</div>
+                        <div class="project-featured">Featured</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-time Analytics Dashboard</h3>
+                        <p>Build a real-time analytics dashboard with WebSockets that displays live data visualization and instant updates.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Socket.io</span>
+                            <span>Redis</span>
+                            <span>D3.js</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 - NEW -->
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/serverless-api.jpg')">
+                        <div class="project-level">Advanced</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Serverless API Architecture</h3>
+                        <p>Deploy a fully serverless API using AWS Lambda and API Gateway with automated CI/CD pipeline integration.</p>
+                        <div class="project-tech">
+                            <span>AWS Lambda</span>
+                            <span>API Gateway</span>
+                            <span>DynamoDB</span>
+                            <span>Serverless Framework</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-all-projects">
+                <a href="#" class="btn-primary">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="industry-partners">
+                <h3>Industry Project Partners</h3>
+                <div class="partners-grid">
+                    <div class="partner-logo"><img src="../../images/partners/company1.png" alt="Partner Company"></div>
+                    <div class="partner-logo"><img src="../../images/partners/company2.png" alt="Partner Company"></div>
+                    <div class="partner-logo"><img src="../../images/partners/company3.png" alt="Partner Company"></div>
+                    <div class="partner-logo"><img src="../../images/partners/company4.png" alt="Partner Company"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Outcomes Section -->
+    <section class="career-section">
+        <div class="track-container">
+            <h2>Career <span class="highlight">Outcomes</span></h2>
+            <p class="section-intro">Where this skillset can take your career</p>
+            
+            <div class="careers-grid">
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Developer</h3>
+                    <p>Build and maintain server-side applications, APIs, and database systems for web and mobile applications.</p>
+                    <div class="salary-range">
+                        <span>$70,000 - $120,000</span>
+                    </div>
+                </div>
+                
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Administrator</h3>
+                    <p>Manage database systems, optimize performance, and ensure data integrity and security.</p>
+                    <div class="salary-range">
+                        <span>$75,000 - $125,000</span>
+                    </div>
+                </div>
+                
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>API Developer</h3>
+                    <p>Specialize in designing and building APIs that connect applications and services across platforms.</p>
+                    <div class="salary-range">
+                        <span>$80,000 - $135,000</span>
+                    </div>
+                </div>
+                
+                <!-- Career 4 - NEW -->
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Solutions Architect</h3>
+                    <p>Design and implement comprehensive backend architectures for enterprise applications and systems.</p>
+                    <div class="salary-range">
+                        <span>$90,000 - $150,000</span>
+                    </div>
+                </div>
+                
+                <!-- Career 5 - NEW -->
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>DevOps Engineer</h3>
+                    <p>Combine backend expertise with automation to build and maintain continuous integration and deployment pipelines.</p>
+                    <div class="salary-range">
+                        <span>$85,000 - $140,000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="career-stats">
+                <div class="stat">
+                    <div class="stat-number">94%</div>
+                    <div class="stat-desc">of our graduates find backend jobs within 6 months</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">$25k</div>
+                    <div class="stat-desc">average salary increase after completing this track</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-desc">hiring partners looking for backend talent</div>
+                </div>
+            </div>
+            
+            <div class="testimonials">
+                <h3>Graduate Success Stories</h3>
+                <div class="testimonial-card">
+                    <div class="testimonial-img">
+                        <img src="../../images/testimonials/graduate1.jpg" alt="Graduate">
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"The backend development track gave me the exact skills I needed to transition from a frontend role to a full-stack position, resulting in a 35% salary increase."</p>
+                        <div class="testimonial-author">
+                            <strong>Michael K.</strong>
+                            <span>Backend Developer at TechCorp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enroll CTA -->
+    <section class="enroll-cta">
+        <div class="track-container">
+            <div class="cta-wrapper">
+                <div class="cta-content">
+                    <h2>Ready to Start Your <span class="highlight">Backend Journey?</span></h2>
+                    <p>Join thousands of students who have successfully transformed their careers through our backend development track.</p>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn-primary">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-outline">
+                        <span>Download Syllabus</span>
+                        <i class="fas fa-file-download"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom animations -->
+    <script src="../../js/animations.js"></script>
+    <script src="../../js/track-detail.js"></script>
+</body>
+</html>

@@ -29,39 +29,23 @@
 </head>
 <body>
     <div id="particles-js" class="particles-container"></div>
-    <div id="mobile-menu-overlay"></div>
     <nav class="glass-nav">
         <div class="nav-logo">
             <a href="./index.html"><div class="logo-text">FADA'</div></a>
         </div>
-        <div id="mobile-nav-links" class="nav-links">
-            <div class="mobile-menu-header">
-                <div class="logo-text">FADA'</div>
-                <button id="close-mobile-menu" aria-label="Close menu">
-                    <i class="fas fa-times"></i>
+        <div class="nav-links">
+            <a href="#" class="nav-link"><span>Home</span></a>
+            <a href="./Pages/about.html" class="nav-link"><span>About</span></a>
+            <a href="./Pages/courses.html" class="nav-link"><span>Tracks</span></a>
+            <div class="cta-group">
+    
+                <button class="cta-button" onclick="location.href='./Pages/coming-soon.html'">
+                    <span>Join Now</span>
+                    <i class="fas fa-chevron-right"></i>
                 </button>
             </div>
-            <div class="mobile-menu-items">
-                <a href="#" class="nav-link"><span>Home</span></a>
-                <a href="./Pages/about.html" class="nav-link"><span>About</span></a>
-                <a href="./Pages/courses.html" class="nav-link"><span>Tracks</span></a>
-                <div class="cta-group">
-                    <button class="cta-button" onclick="location.href='./Pages/coming-soon.html'">
-                        <span>Join Now</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="mobile-menu-footer">
-                <div class="social-links">
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
         </div>
-        <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false">
-            <div class="bar"></div>
+        <div class="menu-toggle">
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
@@ -97,40 +81,5 @@
     </div>
     
     <script src="js/animations.js"></script>
-    <script>
-        // Mobile menu functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('mobile-menu');
-            const navLinks = document.getElementById('mobile-nav-links');
-            const closeButton = document.getElementById('close-mobile-menu');
-            const overlay = document.getElementById('mobile-menu-overlay');
-            const mobileLinks = navLinks.querySelectorAll('.nav-link');
-            
-            function openMobileMenu() {
-                navLinks.classList.add('active');
-                menuToggle.classList.add('active');
-                menuToggle.setAttribute('aria-expanded', 'true');
-                overlay.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            }
-            
-            function closeMobileMenu() {
-                navLinks.classList.remove('active');
-                menuToggle.classList.remove('active');
-                menuToggle.setAttribute('aria-expanded', 'false');
-                overlay.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-            
-            menuToggle.addEventListener('click', openMobileMenu);
-            closeButton.addEventListener('click', closeMobileMenu);
-            overlay.addEventListener('click', closeMobileMenu);
-            
-            // Close menu when links are clicked
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', closeMobileMenu);
-            });
-        });
-    </script>
 </body>
 </html>

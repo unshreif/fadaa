@@ -1,0 +1,78 @@
+/* Data Science Track Specific Styles */
+
+:root {
+  --datascience-primary: #ff9966;
+  --datascience-secondary: #ff5e62;
+  --datascience-gradient: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+/* Override highlight color */
+.highlight {
+  color: var(--datascience-primary);
+}
+
+/* Override accent line */
+.accent-line {
+  background: var(--datascience-gradient);
+}
+
+/* Override icon wrapper */
+.icon-wrapper {
+  background: var(--datascience-gradient);
+  box-shadow: 0 15px 30px rgba(255, 153, 102, 0.3);
+}
+
+/* Override meta item icons */
+.meta-item i {
+  color: var(--datascience-primary);
+}
+
+/* Override enroll button */
+.enroll-btn {
+  background: var(--datascience-gradient);
+  box-shadow: 0 10px 20px rgba(255, 153, 102, 0.3);
+}
+
+.enroll-btn:hover {
+  box-shadow: 0 15px 30px rgba(255, 153, 102, 0.4);
+}
+
+/* Override tags */
+.tag {
+  background: rgba(255, 153, 102, 0.1);
+  border: 1px solid rgba(255, 153, 102, 0.3);
+  color: var(--datascience-primary);
+}
+
+/* Override stats */
+.stat-card {
+  background: rgba(255, 153, 102, 0.05);
+  border: 1px solid rgba(255, 153, 102, 0.2);
+}
+
+.stat-value {
+  color: var(--datascience-primary);
+}
+
+/* Override roadmap line */
+.roadmap:before {
+  background: rgba(255, 153, 102, 0.3);
+}
+
+.phase-number {
+  background: rgba(255, 153, 102, 0.1);
+  border: 2px solid rgba(255, 153, 102, 0.5);
+  color: var(--datascience-primary);
+}
+
+.topic i {
+  color: var(--datascience-primary);
+}
+
+/* Additional styles would follow the same pattern as other track CSS files */
+/* ...existing CSS structure... */
+
+/* Override particles */
+#particles-js {
+  --particle-color: var(--datascience-primary);
+}

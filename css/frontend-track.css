@@ -1,0 +1,254 @@
+/* Frontend Track Specific Styles */
+
+:root {
+  --frontend-primary: #61dafb;
+  --frontend-secondary: #2a6fdb;
+  --frontend-gradient: linear-gradient(135deg, #61dafb, #2a6fdb);
+}
+
+/* Override highlight color */
+.highlight {
+  color: var(--frontend-primary);
+}
+
+/* Override accent line */
+.accent-line {
+  background: var(--frontend-gradient);
+}
+
+/* Override icon wrapper */
+.icon-wrapper {
+  background: var(--frontend-gradient);
+  box-shadow: 0 15px 30px rgba(97, 218, 251, 0.3);
+}
+
+/* Override meta item icons */
+.meta-item i {
+  color: var(--frontend-primary);
+}
+
+/* Override enroll button */
+.enroll-btn {
+  background: var(--frontend-gradient);
+  box-shadow: 0 10px 20px rgba(97, 218, 251, 0.3);
+}
+
+.enroll-btn:hover {
+  box-shadow: 0 15px 30px rgba(97, 218, 251, 0.4);
+}
+
+/* Override tags */
+.tag {
+  background: rgba(97, 218, 251, 0.1);
+  border: 1px solid rgba(97, 218, 251, 0.3);
+  color: var(--frontend-primary);
+}
+
+/* Override stats */
+.stat-card {
+  background: rgba(97, 218, 251, 0.05);
+  border: 1px solid rgba(97, 218, 251, 0.2);
+}
+
+.stat-value {
+  color: var(--frontend-primary);
+}
+
+/* Override roadmap line */
+.roadmap:before {
+  background: rgba(97, 218, 251, 0.3);
+}
+
+.phase-number {
+  background: rgba(97, 218, 251, 0.1);
+  border: 2px solid rgba(97, 218, 251, 0.5);
+  color: var(--frontend-primary);
+}
+
+.topic i {
+  color: var(--frontend-primary);
+}
+
+/* Override course icons */
+.course-icon {
+  background: rgba(97, 218, 251, 0.1);
+}
+
+.course-icon i {
+  color: var(--frontend-primary);
+}
+
+.course-tag {
+  background: rgba(97, 218, 251, 0.1);
+  color: var(--frontend-primary);
+}
+
+.detail-item i {
+  color: var(--frontend-primary);
+}
+
+.course-btn {
+  border: 1px solid var(--frontend-primary);
+  color: var(--frontend-primary);
+}
+
+.course-btn:hover {
+  background: rgba(97, 218, 251, 0.1);
+}
+
+/* Override CTA section */
+.cta-wrapper {
+  border: 1px solid rgba(97, 218, 251, 0.2);
+  background-image: radial-gradient(circle at top right, rgba(97, 218, 251, 0.1), transparent 70%);
+}
+
+.btn-primary {
+  background: var(--frontend-gradient);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 20px rgba(97, 218, 251, 0.3);
+}
+
+.btn-outline {
+  border: 1px solid var(--frontend-primary);
+  color: var(--frontend-primary);
+}
+
+.btn-outline:hover {
+  background: rgba(97, 218, 251, 0.1);
+}
+
+/* Override category buttons */
+.category-btn.active {
+  background: var(--frontend-primary);
+  color: #0a192f;
+  border-color: var(--frontend-primary);
+}
+
+/* External course stats */
+.course-stats .stat i {
+  color: var(--frontend-primary);
+}
+
+/* Tech Background Animation */
+.tech-background {
+  overflow: hidden;
+  position: relative;
+}
+
+.tech-background:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, transparent 30%, #0a192f 80%);
+}
+
+.code-snippet {
+  z-index: 1;
+}
+
+.code-snippet code {
+  color: var(--frontend-primary);
+}
+
+/* Framework Icons Floating Animation */
+.frameworks-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 0.1;
+}
+
+.framework-icon {
+  position: absolute;
+  font-size: 3rem;
+  color: var(--frontend-primary);
+  animation: float 6s infinite ease-in-out;
+}
+
+.framework-icon:nth-child(1) {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.framework-icon:nth-child(2) {
+  top: 20%;
+  right: 20%;
+  animation-delay: 1s;
+}
+
+.framework-icon:nth-child(3) {
+  bottom: 15%;
+  left: 15%;
+  animation-delay: 2s;
+}
+
+.framework-icon:nth-child(4) {
+  bottom: 25%;
+  right: 10%;
+  animation-delay: 3s;
+}
+
+.framework-icon:nth-child(5) {
+  top: 50%;
+  left: 50%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Card Hover Effects */
+.external-course-card:hover {
+  border-color: var(--frontend-primary);
+}
+
+.external-course-card:hover .external-course-btn {
+  background: rgba(97, 218, 251, 0.1);
+  color: var(--frontend-primary);
+}
+
+/* Particles customization */
+#particles-js {
+  --particle-color: var(--frontend-primary);
+}
+
+/* Better focus state for accessibility */
+.category-btn:focus,
+.course-btn:focus,
+.external-course-btn:focus,
+.btn-primary:focus,
+.btn-outline:focus {
+  outline: 2px solid var(--frontend-primary);
+  outline-offset: 2px;
+}
+
+/* Responsive Design for Filter UI */
+@media (max-width: 768px) {
+  .course-categories {
+    gap: 8px;
+  }
+  
+  .category-btn {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}

@@ -1,0 +1,523 @@
+/* Course Cards Styling */
+.main-courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2rem;
+    margin: 2.5rem 0 3.5rem;
+}
+
+.course-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.75rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    min-height: 480px; /* Increased fixed minimum height */
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(var(--accent-color-rgb), 0.5);
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.course-level {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.beginner {
+    background-color: rgba(72, 187, 120, 0.2);
+    color: #48bb78;
+}
+
+.intermediate {
+    background-color: rgba(237, 137, 54, 0.2);
+    color: #ed8936;
+}
+
+.advanced {
+    background-color: rgba(236, 72, 153, 0.2);
+    color: #ec4899;
+}
+
+.course-duration {
+    font-size: 0.85rem;
+    color: var(--text-color-light);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.course-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.course-card p {
+    font-size: 0.95rem;
+    color: var(--text-color-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.course-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 auto; /* Push footer to bottom */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.course-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.85rem;
+    font-size: 0.95rem;
+}
+
+.course-features li i {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.course-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Push to bottom of flex container */
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.instructor {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.instructor img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(var(--accent-color-rgb), 0.3);
+}
+
+.instructor span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 0.5rem 1.25rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+/* External Course Styles */
+.section-divider {
+    display: flex;
+    align-items: center;
+    margin: 3.5rem 0 2.5rem;
+    gap: 1rem;
+}
+
+.section-divider span {
+    color: var(--text-color-light);
+    font-size: 0.95rem;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.section-divider .line {
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.05)
+    );
+    flex-grow: 1;
+}
+
+.course-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-bottom: 2rem;
+}
+
+.category-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 0.5rem 1.25rem;
+    color: var(--text-color-light);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.category-btn.active,
+.category-btn:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border-color: var(--accent-color);
+}
+
+/* Add language filter button */
+.category-btn[data-category="arabic"] {
+    position: relative;
+}
+
+.category-btn[data-category="arabic"]::after {
+    content: "عربي";
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    font-size: 10px;
+    background: var(--accent-color);
+    color: var(--bg-color);
+    padding: 2px 5px;
+    border-radius: 10px;
+    line-height: 1;
+}
+
+/* Added class for hiding instructors when filters are active */
+.filtered-view .course-instructor {
+    display: none;
+}
+
+.filtered-view .external-course-card p {
+    margin-bottom: 1.75rem;
+    flex-grow: 1;
+}
+
+.filtered-view .course-stats {
+    margin-bottom: 2rem;
+}
+
+/* Additional platform badges */
+.youtube {
+    background-color: #FF0000;
+    color: white;
+}
+
+.freecodecamp {
+    background-color: #0A0A23;
+    color: white;
+}
+
+.mdn {
+    background-color: #000000;
+    color: white;
+}
+
+.scrimba {
+    background-color: #2B283A;
+    color: white;
+}
+
+.egghead {
+    background-color: #FCFBFA;
+    color: #151515;
+}
+
+/* RTL support for Arabic courses */
+[lang="ar"] .external-course-card,
+.external-course-card.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+[lang="ar"] .course-stats,
+.external-course-card.rtl .course-stats {
+    flex-direction: row-reverse;
+}
+
+/* Fixed Course Grid Layout */
+.external-courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem; /* Reduced gap for better cohesion */
+    margin: 2rem 0;
+    grid-auto-rows: 1fr; /* Ensure consistent row heights */
+}
+
+/* Ensure correct card aspect ratio and dimensions */
+.external-course-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0; /* Reset min-height to let the grid control height */
+    box-sizing: border-box;
+}
+
+/* Fix for Safari/iOS rendering */
+@supports (-webkit-appearance:none) {
+    .external-courses-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        grid-auto-flow: row dense;
+    }
+}
+
+/* Ensure equal height rows on different browsers */
+@supports not (grid-template-rows: masonry) {
+    .external-courses-grid::before {
+        content: '';
+        width: 0;
+        padding-bottom: 100%;
+        grid-row: 1 / 1;
+        grid-column: 1 / 1;
+    }
+    
+    .external-courses-grid > *:first-child {
+        grid-row: 1 / 1;
+        grid-column: 1 / 1;
+    }
+}
+
+.external-course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.course-platform {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.course-platform span {
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+    font-weight: 500;
+}
+
+.platform-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.udemy {
+    background-color: #a435f0;
+    color: white;
+}
+
+.coursera {
+    background-color: #0056D2;
+    color: white;
+}
+
+.frontendmasters {
+    background-color: #c02d28;
+    color: white;
+}
+
+.edx {
+    background-color: #02262B;
+    color: white;
+}
+
+.tau {
+    background-color: #15B89A;
+    color: white;
+}
+
+.linkedin {
+    background-color: #0077B5;
+    color: white;
+}
+
+.google {
+    background-color: #4285F4;
+    color: white;
+}
+
+.external-course-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.85rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.external-course-card p {
+    font-size: 0.95rem;
+    color: var(--text-color-light);
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+}
+
+.course-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--text-color-light);
+}
+
+.stat i {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.course-instructor {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1.25rem 0;
+}
+
+.course-instructor img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.course-instructor span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color-light);
+}
+
+/* Ensure external course buttons stay at bottom */
+.external-course-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.25rem;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    justify-content: center;
+    margin-top: auto; /* Push to bottom of container */
+    align-self: center; /* Center horizontally */
+    width: 100%; /* Full width button */
+}
+
+/* Add this to ensure the grid items are the same height */
+.main-courses, .external-courses-grid {
+    display: grid;
+    grid-auto-rows: 1fr; /* Each row will have the same height */
+}
+
+/* Language badge for courses */
+.language-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.language-badge.en {
+    background-color: rgba(66, 133, 244, 0.15);
+    color: #4285F4;
+    border: 1px solid rgba(66, 133, 244, 0.3);
+}
+
+.language-badge.ar {
+    background-color: rgba(234, 67, 53, 0.15);
+    color: #EA4335;
+    border: 1px solid rgba(234, 67, 53, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .main-courses,
+    .external-courses-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-courses,
+    .external-courses-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .course-categories {
+        overflow-x: auto;
+        padding-bottom: 1rem;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+    }
+
+    .category-btn {
+        white-space: nowrap;
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .section-divider span {
+        font-size: 0.85rem;
+    }
+    
+    .course-card,
+    .external-course-card {
+        padding: 1.5rem;
+        min-height: 450px; /* Slightly shorter on mobile but still consistent */
+    }
+}

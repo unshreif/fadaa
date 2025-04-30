@@ -1,0 +1,238 @@
+/* Full Stack Track Specific Styles */
+
+:root {
+  --fullstack-primary: #7000ff;
+  --fullstack-secondary: #c800ff;
+  --fullstack-gradient: linear-gradient(135deg, #7000ff, #c800ff);
+}
+
+/* Override highlight color */
+.highlight {
+  color: var(--fullstack-primary);
+}
+
+/* Override accent line */
+.accent-line {
+  background: var(--fullstack-gradient);
+}
+
+/* Override icon wrapper */
+.icon-wrapper {
+  background: var(--fullstack-gradient);
+  box-shadow: 0 15px 30px rgba(112, 0, 255, 0.3);
+}
+
+/* Override meta item icons */
+.meta-item i {
+  color: var(--fullstack-primary);
+}
+
+/* Override enroll button */
+.enroll-btn {
+  background: var(--fullstack-gradient);
+  box-shadow: 0 10px 20px rgba(112, 0, 255, 0.3);
+}
+
+.enroll-btn:hover {
+  box-shadow: 0 15px 30px rgba(112, 0, 255, 0.4);
+}
+
+/* Override tags */
+.tag {
+  background: rgba(112, 0, 255, 0.1);
+  border: 1px solid rgba(112, 0, 255, 0.3);
+  color: var(--fullstack-primary);
+}
+
+/* Override stats */
+.stat-card {
+  background: rgba(112, 0, 255, 0.05);
+  border: 1px solid rgba(112, 0, 255, 0.2);
+}
+
+.stat-value {
+  color: var(--fullstack-primary);
+}
+
+/* Override roadmap line */
+.roadmap:before {
+  background: rgba(112, 0, 255, 0.3);
+}
+
+.phase-number {
+  background: rgba(112, 0, 255, 0.1);
+  border: 2px solid rgba(112, 0, 255, 0.5);
+  color: var(--fullstack-primary);
+}
+
+.topic i {
+  color: var(--fullstack-primary);
+}
+
+/* Override course icons */
+.course-icon {
+  background: rgba(112, 0, 255, 0.1);
+}
+
+.course-icon i {
+  color: var(--fullstack-primary);
+}
+
+.course-tag {
+  background: rgba(112, 0, 255, 0.1);
+  color: var(--fullstack-primary);
+}
+
+.detail-item i {
+  color: var(--fullstack-primary);
+}
+
+.course-btn {
+  border: 1px solid var(--fullstack-primary);
+  color: var(--fullstack-primary);
+}
+
+.course-btn:hover {
+  background: rgba(112, 0, 255, 0.1);
+}
+
+/* Special Course Styling */
+.special-course {
+  position: relative;
+  border: 1px solid var(--fullstack-primary);
+  box-shadow: 0 5px 15px rgba(112, 0, 255, 0.1);
+}
+
+.course-ribbon {
+  position: absolute;
+  top: 15px;
+  right: -5px;
+  background: var(--fullstack-primary);
+  color: white;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.course-ribbon::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  border-left: 5px solid #4b0099;
+  border-bottom: 5px solid transparent;
+}
+
+/* Courses Note */
+.courses-note {
+  margin-top: 40px;
+  padding: 15px 20px;
+  background: rgba(112, 0, 255, 0.05);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.courses-note i {
+  color: var(--fullstack-primary);
+  font-size: 24px;
+}
+
+.courses-note p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+}
+
+/* Featured Project Styling */
+.featured-project {
+  border: 1px solid var(--fullstack-primary);
+}
+
+.project-featured {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--fullstack-primary);
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+/* Override CTA section */
+.cta-wrapper {
+  border: 1px solid rgba(112, 0, 255, 0.2);
+  background-image: radial-gradient(circle at top right, rgba(112, 0, 255, 0.1), transparent 70%);
+}
+
+.btn-primary {
+  background: var(--fullstack-gradient);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 20px rgba(112, 0, 255, 0.3);
+}
+
+.btn-outline {
+  border: 1px solid var(--fullstack-primary);
+  color: var(--fullstack-primary);
+}
+
+.btn-outline:hover {
+  background: rgba(112, 0, 255, 0.1);
+}
+
+/* Career Section */
+.career-icon {
+  background: rgba(112, 0, 255, 0.1);
+}
+
+.career-icon i {
+  color: var(--fullstack-primary);
+}
+
+.career-stats .stat {
+  background: rgba(112, 0, 255, 0.05);
+}
+
+.career-stats .stat-number {
+  color: var(--fullstack-primary);
+}
+
+.testimonial-author span {
+  color: var(--fullstack-primary);
+}
+
+/* Industry Partners */
+.industry-partners h3 {
+  margin-bottom: 30px;
+}
+
+.partners-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.partner-logo {
+  height: 60px;
+  filter: grayscale(100%) brightness(1.5);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%) brightness(1);
+  opacity: 1;
+}
+
+/* Override particles */
+#particles-js {
+  --particle-color: var(--fullstack-primary);
+}

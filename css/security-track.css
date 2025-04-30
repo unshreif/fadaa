@@ -1,0 +1,191 @@
+/* Cybersecurity Track Specific Styles */
+
+:root {
+  --security-primary: #5ee7df;
+  --security-secondary: #b490ca;
+  --security-gradient: linear-gradient(135deg, #5ee7df, #b490ca);
+}
+
+/* Override highlight color */
+.highlight {
+  color: var(--security-primary);
+}
+
+/* Override accent line */
+.accent-line {
+  background: var(--security-gradient);
+}
+
+/* Override icon wrapper */
+.icon-wrapper {
+  background: var(--security-gradient);
+  box-shadow: 0 15px 30px rgba(94, 231, 223, 0.3);
+}
+
+/* Override meta item icons */
+.meta-item i {
+  color: var(--security-primary);
+}
+
+/* Override enroll button */
+.enroll-btn {
+  background: var(--security-gradient);
+  box-shadow: 0 10px 20px rgba(94, 231, 223, 0.3);
+}
+
+.enroll-btn:hover {
+  box-shadow: 0 15px 30px rgba(94, 231, 223, 0.4);
+}
+
+/* Override tags */
+.tag {
+  background: rgba(94, 231, 223, 0.1);
+  border: 1px solid rgba(94, 231, 223, 0.3);
+  color: var(--security-primary);
+}
+
+/* Override stats */
+.stat-card {
+  background: rgba(94, 231, 223, 0.05);
+  border: 1px solid rgba(94, 231, 223, 0.2);
+}
+
+.stat-value {
+  color: var(--security-primary);
+}
+
+/* Override roadmap line */
+.roadmap:before {
+  background: rgba(94, 231, 223, 0.3);
+}
+
+.phase-number {
+  background: rgba(94, 231, 223, 0.1);
+  border: 2px solid rgba(94, 231, 223, 0.5);
+  color: var(--security-primary);
+}
+
+.topic i {
+  color: var(--security-primary);
+}
+
+/* Override course icons */
+.course-icon {
+  background: rgba(94, 231, 223, 0.1);
+}
+
+.course-icon i {
+  color: var(--security-primary);
+}
+
+.course-tag {
+  background: rgba(94, 231, 223, 0.1);
+  color: var(--security-primary);
+}
+
+.detail-item i {
+  color: var(--security-primary);
+}
+
+.course-btn {
+  border: 1px solid var(--security-primary);
+  color: var(--security-primary);
+}
+
+.course-btn:hover {
+  background: rgba(94, 231, 223, 0.1);
+}
+
+/* Special Course Styling */
+.special-course {
+  position: relative;
+  border: 1px solid var(--security-primary);
+  box-shadow: 0 5px 15px rgba(94, 231, 223, 0.1);
+}
+
+.course-ribbon {
+  position: absolute;
+  top: 15px;
+  right: -5px;
+  background: var(--security-primary);
+  color: #0a192f;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.course-ribbon::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  border-left: 5px solid #41a19c;
+  border-bottom: 5px solid transparent;
+}
+
+/* Featured Project Styling */
+.featured-project {
+  border: 1px solid var(--security-primary);
+}
+
+.project-featured {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--security-primary);
+  color: #0a192f;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+/* Override CTA section */
+.cta-wrapper {
+  border: 1px solid rgba(94, 231, 223, 0.2);
+  background-image: radial-gradient(circle at top right, rgba(94, 231, 223, 0.1), transparent 70%);
+}
+
+.btn-primary {
+  background: var(--security-gradient);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 20px rgba(94, 231, 223, 0.3);
+}
+
+.btn-outline {
+  border: 1px solid var(--security-primary);
+  color: var(--security-primary);
+}
+
+.btn-outline:hover {
+  background: rgba(94, 231, 223, 0.1);
+}
+
+/* Override particles */
+#particles-js {
+  --particle-color: var(--security-primary);
+}
+
+/* Security-specific code block styling */
+.code-snippet {
+  position: relative;
+}
+
+.code-snippet::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, transparent 50%, rgba(10, 25, 47, 0.8) 100%);
+  pointer-events: none;
+}
+
+.code-snippet code {
+  color: var(--security-primary);
+}
