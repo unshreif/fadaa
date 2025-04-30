@@ -1,6 +1,3 @@
-/* Get Started Page Specific Styles */
-
-/* Hero Section */
 .tracks-hero {
     padding: 160px 0 80px;
     text-align: center;
@@ -36,7 +33,6 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Tracks Grid - Fixed Card Sizes */
 .tracks-section {
     padding: 40px 0 120px;
 }
@@ -63,7 +59,6 @@
     flex-direction: column;
     height: 100%;
     
-    /* Fixed height for consistency */
     min-height: 450px;
     max-height: 450px;
 }
@@ -90,7 +85,6 @@
     z-index: 0;
 }
 
-/* Tech Icon Positioning */
 .tech-icon {
     position: absolute;
     top: 30px;
@@ -171,7 +165,6 @@
     color: white;
 }
 
-/* Card Content Spacing */
 .track-content {
     position: relative;
     z-index: 1;
@@ -193,7 +186,6 @@
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 20px;
     line-height: 1.6;
-    /* Limit description height to ensure consistency */
     max-height: 80px;
     overflow: hidden;
     display: -webkit-box;
@@ -201,7 +193,6 @@
     -webkit-box-orient: vertical;
 }
 
-/* Tech Stack Labels */
 .track-tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -218,7 +209,6 @@
     white-space: nowrap;
 }
 
-/* CTA Button Positioning */
 .track-cta {
     display: inline-flex;
     align-items: center;
@@ -249,7 +239,6 @@
     transform: translateX(5px);
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1200px) {
     .tracks-grid {
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -275,6 +264,7 @@
         grid-template-columns: 1fr;
         max-width: 450px;
         margin: 0 auto;
+        gap: 120px;
     }
     
     .track-card {
