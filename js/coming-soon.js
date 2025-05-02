@@ -1,120 +1,57 @@
-document.addEventListener('DOMContentLoaded', function() {
-    if (typeof particlesJS !== 'undefined') {
-        particlesJS("particles-js", {
-            "particles": {
-                "number": {
-                    "value": 100,
-                    "density": { "enable": true, "value_area": 800 }
+        document.addEventListener('DOMContentLoaded', function() {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: '#4ca5ff' },
+                    shape: {
+                        type: 'circle',
+                        stroke: { width: 0, color: '#000000' },
+                        polygon: { nb_sides: 5 }
+                    },
+                    opacity: {
+                        value: 0.5,
+                        random: false,
+                        anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+                    },
+                    size: {
+                        value: 3,
+                        random: true,
+                        anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: '#4ca5ff',
+                        opacity: 0.3,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 2,
+                        direction: 'none',
+                        random: false,
+                        straight: false,
+                        out_mode: 'out',
+                        bounce: false,
+                        attract: { enable: false, rotateX: 600, rotateY: 1200 }
+                    }
                 },
-                "color": { "value": "#0cffe1" },
-                "shape": { "type": "circle" },
-                "opacity": {
-                    "value": 0.5,
-                    "random": true,
+                interactivity: {
+                    detect_on: 'canvas',
+                    events: {
+                        onhover: { enable: true, mode: 'grab' },
+                        onclick: { enable: true, mode: 'push' },
+                        resize: true
+                    },
+                    modes: {
+                        grab: { distance: 140, line_linked: { opacity: 1 } },
+                        bubble: { distance: 400, size: 40, duration: 2, opacity: 8 },
+                        repulse: { distance: 200, duration: 0.4 },
+                        push: { particles_nb: 4 },
+                        remove: { particles_nb: 2 }
+                    }
                 },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#0cffe1",
-                    "opacity": 0.2,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 1,
-                    "direction": "none",
-                    "random": true,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": { "enable": true, "mode": "grab" },
-                    "onclick": { "enable": true, "mode": "push" },
-                },
-                "modes": {
-                    "grab": { "distance": 140, "line_linked": { "opacity": 0.8 } },
-                    "push": { "particles_nb": 4 }
-                }
-            },
-            "retina_detect": true
+                retina_detect: true
+            });
         });
-    }
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    const codeLines = document.querySelectorAll('.code-line');
-    codeLines.forEach((line, index) => {
-        gsap.from(line, {
-            opacity: 0,
-            y: 20,
-            delay: 0.5 + (index * 0.2),
-            duration: 0.8,
-            ease: "power3.out"
-        });
-    });
-
-    gsap.from('.tech-badge', {
-        y: -50,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out"
-    });
-
-    gsap.from('h1', {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        delay: 0.3,
-        ease: "power3.out"
-    });
-
-    gsap.from('.accent-line', {
-        width: 0,
-        opacity: 0,
-        duration: 1,
-        delay: 0.5,
-        ease: "power3.out"
-    });
-
-    gsap.from('.soon-description', {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        delay: 0.7,
-        ease: "power3.out"
-    });
-
-    gsap.from('.time-block', {
-        scale: 0.8,
-        opacity: 0,
-        duration: 0.8,
-        delay: 0.9,
-        stagger: 0.1,
-        ease: "back.out(1.7)"
-    });
-
-    gsap.from('.notification-form', {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        delay: 1.3,
-        ease: "power3.out"
-    });
-
-    gsap.from('.social-icon', {
-        scale: 0,
-        opacity: 0,
-        duration: 0.5,
-        delay: 1.5,
-        stagger: 0.1,
-        ease: "back.out(1.7)"
-    });
-});
+        

@@ -296,7 +296,7 @@
 
 @keyframes hologram-glow {
     0% { opacity: 0.5; filter: blur(2px); }
-    50% { opacity: 8; filter: blur(1px); }
+    50% { opacity: 0.8; filter: blur(1px); }
     100% { opacity: 0.6; filter: blur(3px); }
 }
 

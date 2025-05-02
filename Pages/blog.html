@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FADA' Blog - Tutorials, guides, and insights on programming and web development">
+    <meta name="keywords" content="coding blog, programming tutorials, web development, learning to code">
+    <meta name="author" content="FADA'">
+    <meta name="theme-color" content="#0a192f">
+    <title>Blog | FADA'</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <meta property="og:title" content="FADA' Blog">
+    <meta property="og:description" content="Tutorials, guides, and insights on programming and web development">
+    <meta property="og:image" content="../images/og-image.jpg">
+    <meta property="og:url" content="https://fadacode.com/blog">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+    <div id="particles-js" class="particles-container"></div>
+    <nav class="glass-nav">
+        <div class="nav-logo">
+           <A href="../index.html"> <div class="logo-text">FADA'</div></A>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link"><span>Home</span></a>
+            <a href="about.html" class="nav-link"><span>About</span></a>
+            <a href="get-started.html" class="nav-link"><span>Tracks</span></a>
+            <div class="cta-group">
+                <button class="cta-button" onclick="location.href='coming-soon.html'">
+                    <span>Join Now</span>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <section class="blog-hero">
+        <div class="blog-container">
+            <div class="blog-header">
+                <h1>FADA' Blog</h1>
+                <div class="accent-line"></div>
+                <p>Tutorials, insights, and resources to help you on your coding journey</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-post-section">
+        <div class="blog-container">
+            <div class="featured-post">
+                <div class="featured-post-image" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2344&q=80')"></div>
+                <div class="featured-post-content">
+                    <div class="featured-badge">Featured</div>
+                    <h2 class="featured-post-title">The Complete Guide to Modern JavaScript Development in 2023</h2>
+                    <div class="post-meta">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Author" class="author-image">
+                        <span class="author-name">Sarah Johnson</span>
+                        <span class="post-date"><i class="far fa-calendar-alt"></i> May 15, 2023</span>
+                    </div>
+                    <p class="featured-post-excerpt">Explore the latest JavaScript features, tools, and best practices that are shaping modern web development. From ES6+ syntax to frameworks and beyond, this guide covers everything you need to stay current.</p>
+                    <a href="blog/javascript-guide-2023.html" class="read-more-btn">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<br>
+    <section class="blog-main-section">
+        <div class="blog-container">
+            <div class="blog-categories">
+                <button class="category-btn active" data-category="all">All Posts</button>
+                <button class="category-btn" data-category="tutorials">Tutorials</button>
+                <button class="category-btn" data-category="career">Career</button>
+                <button class="category-btn" data-category="tools">Tools & Resources</button>
+                <button class="category-btn" data-category="insights">Industry Insights</button>
+                <button class="category-btn" data-category="frontend">Frontend</button>
+                <button class="category-btn" data-category="backend">Backend</button>
+            </div>
+            
+            <div class="blog-grid">
+                <div class="blog-card" data-categories="tutorials frontend">
+                    <div class="blog-card-image" style="background-image: url('https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')">
+                        <div class="blog-card-category">Frontend</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">How to Build Accessible Web Forms That Everyone Can Use</h3>
+                        <p class="blog-card-excerpt">Learn how to create inclusive, accessible web forms that work for all users, including those with disabilities. Implement ARIA attributes, proper labeling, and keyboard navigation.</p>
+                        <div class="blog-card-meta">
+                            <span class="post-date">April 25, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-categories="tutorials backend">
+                    <div class="blog-card-image" style="background-image: url('https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')">
+                        <div class="blog-card-category">Backend</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">RESTful API Design Best Practices for Node.js</h3>
+                        <p class="blog-card-excerpt">Discover the principles of designing clean, efficient, and maintainable RESTful APIs using Node.js and Express. Implement versioning, error handling, and authentication.</p>
+                        <div class="blog-card-meta">
+                            <span class="post-date">April 18, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 12 min read</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-categories="career insights">
+                    <div class="blog-card-image" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')">
+                        <div class="blog-card-category">Career</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">From Bootcamp to Job Offer: A Developer's Journey</h3>
+                        <p class="blog-card-excerpt">Follow the real-world story of a career changer who went from a coding bootcamp to landing their first developer role. Learn what worked, what didn't, and how to prepare yourself.</p>
+                        <div class="blog-card-meta">
+                            <span class="post-date">April 10, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 10 min read</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-categories="tools frontend">
+                    <div class="blog-card-image" style="background-image: url('https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2336&q=80')">
+                        <div class="blog-card-category">Tools</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">10 Must-Have VS Code Extensions for Web Developers</h3>
+                        <p class="blog-card-excerpt">Supercharge your development workflow with these essential Visual Studio Code extensions. From code formatting to debugging and beyond, these tools will boost your productivity.</p>
+                        <div class="blog-card-meta">
+                            <span class="post-date">April 3, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-categories="insights">
+                    <div class="blog-card-image" style="background-image: url('https://images.unsplash.com/photo-1573164574511-73c773193279?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')">
+                        <div class="blog-card-category">Insights</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">The Rise of AI in Development: Friend or Foe?</h3>
+                        <p class="blog-card-excerpt">Explore how artificial intelligence is changing the landscape of software development. From code generation to automated testing, discover the opportunities and challenges AI presents.</p>
+                        <div class="blog-card-meta">
+                            <span class="post-date">March 28, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 9 min read</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blog-card" data-categories="tutorials frontend">
+                    <div class="blog-card-image" style="background-image: url('https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2532&q=80')">
+                        <div class="blog-card-category">Frontend</div>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 class="blog-card-title">Mastering CSS Grid: From Basics to Advanced Layouts</h3>
+                        <p class="blog-card-excerpt">Unlock the full potential of CSS Grid to create complex, responsive layouts. This step-by-step guide covers everything from grid fundamentals to advanced techniques with practical examples.</p>
+                        <div class="blog-card-meta">
+                            <span class="post-date">March 20, 2023</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 11 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="page-link prev"><i class="fas fa-chevron-left"></i> Prev</a>
+                <a href="#" class="page-link active">1</a>
+                <a href="#" class="page-link">2</a>
+                <a href="#" class="page-link">3</a>
+                <a href="#" class="page-link">...</a>
+                <a href="#" class="page-link">8</a>
+                <a href="#" class="page-link next">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2>Stay Updated with <span class="highlight">FADA'</span></h2>
+            <p>Subscribe to our newsletter to receive the latest tutorials, coding tips, and industry insights directly to your inbox. No spam, just valuable content to help you grow as a developer.</p>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                <button type="submit" class="newsletter-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <script src="../js/blog.js"></script>
+</body>
+</html>

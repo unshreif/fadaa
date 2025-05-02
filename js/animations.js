@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     "retina_detect": true
   });
 
+  // Mobile menu toggle functionality
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
   
@@ -93,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
+  // Parallax effect on mouse move
   document.addEventListener('mousemove', (e) => {
     const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
     const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
@@ -104,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// Text scramble animation class
 class TextScramble {
   constructor(el) {
     this.el = el;
@@ -167,10 +170,14 @@ class TextScramble {
   }
 }
 
+// Add this at the end of your existing animations.js file
+
+// GitHub Repository Card Animation
 document.addEventListener('DOMContentLoaded', function() {
     const repoCard = document.querySelector('.repo-card');
     
     if (repoCard) {
+        // Add pulse effect when hovering over star count
         const starCount = document.querySelector('.star-count');
         if (starCount) {
             starCount.addEventListener('mouseenter', function() {
@@ -183,6 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
         
+        // Make the card draggable on desktop
         let isDragging = false;
         let offsetX, offsetY;
         
@@ -207,6 +215,7 @@ document.addEventListener('DOMContentLoaded', function() {
             parentCard.style.bottom = 'auto';
             parentCard.style.right = 'auto';
             
+            // Stop default browser drag behavior
             e.preventDefault();
         });
         
