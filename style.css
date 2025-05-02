@@ -143,8 +143,9 @@ body {
 
 .menu-toggle .bar {
   width: 25px;
-  height: 2px;
-  background: var(--text-color);
+  height: 5px; /* Increased height for better visibility */
+  background-color: yellow !important; /* Using your primary color variable */
+  border-radius: 2px; /* Adding rounded corners */
   transition: 0.3s;
 }
 
@@ -382,122 +383,9 @@ body {
   }
 }
 
-/* Mobile menu styles */
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--glass-bg);
-  backdrop-filter: blur(15px);
-  z-index: 999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-100%);
-  transition: transform 0.4s ease-in-out;
-}
-
-.mobile-menu.active {
-  transform: translateY(0);
-}
-
-.mobile-menu .nav-links {
-  flex-direction: column;
-  gap: 25px;
-}
-
-.mobile-menu .nav-link {
-  font-size: 20px;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-}
-
-.mobile-menu.active .nav-link {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.mobile-menu .nav-link:nth-child(1) {
-  transition-delay: 0.1s;
-}
-
-.mobile-menu .nav-link:nth-child(2) {
-  transition-delay: 0.2s;
-}
-
-.mobile-menu .nav-link:nth-child(3) {
-  transition-delay: 0.3s;
-}
-
-.mobile-menu .nav-link:nth-child(4) {
-  transition-delay: 0.4s;
-}
-
-.menu-close {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 24px;
-  color: var(--text-color);
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.menu-toggle {
-  width: 30px;
-  height: 20px;
-  position: relative;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.menu-toggle .bar {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: var(--text-color);
-  transition: all 0.3s ease;
-  left: 0;
-}
-
-.menu-toggle .bar:nth-child(1) {
-  top: 0;
-}
-
-.menu-toggle .bar:nth-child(2) {
-  top: 9px;
-}
-
-.menu-toggle .bar:nth-child(3) {
-  top: 18px;
-}
-
-.menu-toggle.active .bar:nth-child(1) {
-  transform: rotate(45deg);
-  top: 9px;
-}
-
-.menu-toggle.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-toggle.active .bar:nth-child(3) {
-  transform: rotate(-45deg);
-  top: 9px;
-}
-
 @media (max-width: 768px) {
-  .nav-links {
+  .nav-links a {
     display: none;
-  }
-  
-  .cta-button {
-    display: none; /* Hide the join button on mobile */
   }
   
   .menu-toggle {
@@ -534,6 +422,49 @@ body {
     width: 180px;
     padding: 12px;
   }
+}
+
+/* Remove or replace the duplicate definition that appears later in the file */
+/* Instead of this:
+.menu-toggle .bar {
+    background-color: #64ffda;
+    transition: background-color 0.3s ease;
+}
+
+.menu-toggle:hover .bar {
+    background-color: #ffffff;
+}
+*/
+
+.welcome-title {
+  font-size: 40px;
+}
+
+.welcome-subtitle {
+  font-size: 18px;
+}
+
+.welcome-cta-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.welcome-cta {
+  width: 100%;
+  max-width: 300px;
+  justify-content: center;
+}
+
+.github-repo-stats {
+  bottom: 20px;
+  right: 20px;
+}
+
+.repo-card {
+  width: 180px;
+  padding: 12px;
 }
 a{
   text-decoration: none;

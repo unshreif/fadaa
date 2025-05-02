@@ -1,3 +1,6 @@
+/* About Page Specific Styles */
+
+/* Hero Section */
 .about-hero {
     padding: 160px 0 60px;
     text-align: center;
@@ -33,6 +36,7 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* Section Styles */
 .about-section {
     padding: 100px 0;
     position: relative;
@@ -64,12 +68,14 @@
     direction: ltr;
 }
 
+/* Mission Section */
 .mission-section {
     background: rgba(10, 14, 23, 0.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
 
+/* Futuristic Orb */
 .futuristic-orb {
     position: relative;
     width: 300px;
@@ -120,6 +126,7 @@
     to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+/* Features Section */
 .features-section {
     text-align: center;
 }
@@ -175,6 +182,7 @@
     line-height: 1.6;
 }
 
+/* Team Section */
 .team-section {
     background: rgba(10, 14, 23, 0.7);
     backdrop-filter: blur(10px);
@@ -262,6 +270,7 @@
     transform: translateY(-3px);
 }
 
+/* Vision Section */
 .hologram-container {
     position: relative;
     width: 300px;
@@ -318,6 +327,7 @@
     box-shadow: 0 10px 20px rgba(112, 0, 255, 0.4);
 }
 
+/* Responsive Styles */
 @media (max-width: 991px) {
     .section-grid, .section-grid.reverse {
         grid-template-columns: 1fr;
