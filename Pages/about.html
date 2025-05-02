@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -31,9 +32,9 @@
     <div id="particles-js" class="particles-container"></div>
     <nav class="glass-nav">
         <div class="nav-logo">
-            <div class="logo-text">FADA'</div>
+            <a href="../index.html"><div class="logo-text">FADA'</div></a>
         </div>
-        <div class="nav-links">
+        <div class="nav-links" id="mobile-menu">
             <a href="../index.html" class="nav-link"><span>Home</span></a>
             <a href="./get-started.html" class="nav-link"><span>Tracks</span></a>
             <a href="./blog.html" class="nav-link"><span>Blog</span></a>
@@ -44,13 +45,13 @@
                 </button>
             </div>
         </div>
-        <div class="menu-toggle">
+        <div class="menu-toggle" id="menu-toggle">
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
     </nav>
     <section class="about-hero">
-        <div class="about-container">
+        <div class="about-container responsive-container">
             <div class="about-header">
                 <h1>About <span class="highlight">FADA'</span></h1>
                 <div class="accent-line"></div>
@@ -59,8 +60,8 @@
         </div>
     </section>
     <section class="about-section mission-section">
-        <div class="about-container">
-            <div class="section-grid">
+        <div class="about-container responsive-container">
+            <div class="section-grid responsive-grid">
                 <div class="section-content">
                     <h2>Our <span class="highlight">Mission</span></h2>
                     <p>At FADA', we believe that learning to code should be accessible, engaging, and aligned with industry needs. Our mission is to bridge the gap between theoretical knowledge and practical application, crafting learning journeys that prepare you for the future of technology.</p>
@@ -77,9 +78,9 @@
         </div>
     </section>
     <section class="about-section features-section">
-        <div class="about-container">
+        <div class="about-container responsive-container">
             <h2>Why Choose <span class="highlight">FADA'</span></h2>
-            <div class="features-grid">
+            <div class="features-grid responsive-features">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-code"></i>
@@ -113,8 +114,8 @@
     </section>
 
     <section class="about-section vision-section">
-        <div class="about-container">
-            <div class="section-grid reverse">
+        <div class="about-container responsive-container">
+            <div class="section-grid reverse responsive-grid">
                 <div class="section-content">
                     <h2>Our <span class="highlight">Vision</span></h2>
                     <p>We envision a future where anyone with passion and determination can master the art of programming and contribute to the technological revolution.</p>
@@ -132,5 +133,14 @@
     </section>
 
     <script src="../js/animations.js"></script>
+    <script src="../js/menu.js"></script>
+    <script>
+        // Mobile menu toggle functionality
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navLinks = document.getElementById('mobile-menu');
+            navLinks.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

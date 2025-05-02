@@ -143,9 +143,9 @@ body {
 
 .menu-toggle .bar {
   width: 25px;
-  height: 5px; /* Increased height for better visibility */
-  background-color: yellow !important; /* Using your primary color variable */
-  border-radius: 2px; /* Adding rounded corners */
+  height: 2px;
+  color: var(--text-color);
+  background: var(--text-color);
   transition: 0.3s;
 }
 
@@ -383,6 +383,32 @@ body {
   }
 }
 
+/* Mobile Menu Toggle Styles */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    color: var(--text-color);
+    margin: 5px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(12, 255, 225, 0.5);
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
 @media (max-width: 768px) {
   .nav-links a {
     display: none;
@@ -390,6 +416,7 @@ body {
   
   .menu-toggle {
     display: flex;
+    color: #fff;
   }
   
   .welcome-title {
@@ -422,49 +449,119 @@ body {
     width: 180px;
     padding: 12px;
   }
+
+  .menu-toggle {
+    display: block;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: rgba(10, 25, 47, 0.95);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  
+  .nav-links.active {
+    right: 0;
+  }
+  
+  .nav-links a {
+    margin: 15px 0;
+  }
+  
+  .cta-group {
+    margin-top: 20px;
+  }
 }
 
-/* Remove or replace the duplicate definition that appears later in the file */
-/* Instead of this:
-.menu-toggle .bar {
-    background-color: #64ffda;
-    transition: background-color 0.3s ease;
-}
-
-.menu-toggle:hover .bar {
-    background-color: #ffffff;
-}
-*/
-
-.welcome-title {
-  font-size: 40px;
-}
-
-.welcome-subtitle {
-  font-size: 18px;
-}
-
-.welcome-cta-container {
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin-top: 30px;
-}
-
-.welcome-cta {
-  width: 100%;
-  max-width: 300px;
-  justify-content: center;
-}
-
-.github-repo-stats {
-  bottom: 20px;
-  right: 20px;
-}
-
-.repo-card {
-  width: 180px;
-  padding: 12px;
+/* Improved Mobile Menu Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: rgba(13, 21, 34, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+        z-index: 1000;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.2);
+        padding: 60px 20px 40px;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links a {
+        display: block !important;
+        margin: 15px 0;
+        font-size: 1.2rem;
+        opacity: 0.9;
+        color: var(--text-color);
+        text-align: center;
+        width: 100%;
+    }
+    
+    .nav-links a:hover {
+        color: var(--primary-color);
+    }
+    
+    .nav-links .cta-group {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .nav-links .cta-button {
+        width: 80%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+        z-index: 1001;
+        color: #fff;
+        
+    }
+    
+    .menu-toggle .bar {
+        width: 28px;
+        height: 3px;
+        background-color: white;
+        color: var(--text-color);
+        border-radius: 3px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8.5px) rotate(45deg);
+    }
+    
+    .menu-toggle.active .bar:nth-child(2) {
+        transform: rotate(-45deg);
+    }
 }
 a{
   text-decoration: none;

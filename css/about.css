@@ -1,51 +1,65 @@
-/* About Page Specific Styles */
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
 
-/* Hero Section */
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
 .about-hero {
-    padding: 160px 0 60px;
+    padding: clamp(120px, 15vw, 160px) 0 clamp(40px, 6vw, 60px);
     text-align: center;
     position: relative;
 }
 
 .about-container {
-    width: 90%;
-    max-width: 1200px;
+    width: min(90%, 1200px);
     margin: 0 auto;
     position: relative;
     z-index: 2;
+    padding: 0 max(15px, 2vw);
 }
 
 .about-header h1 {
-    font-size: 56px;
+    font-size: clamp(32px, 5vw, 56px);
     font-family: var(--font-heading);
-    margin-bottom: 20px;
+    margin-bottom: clamp(15px, 2vw, 20px);
+    line-height: 1.2;
 }
 
 .accent-line {
-    width: 80px;
+    width: clamp(60px, 8vw, 80px);
     height: 4px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    margin: 0 auto 30px;
+    margin: 0 auto clamp(20px, 3vw, 30px);
     border-radius: 2px;
 }
 
 .about-tagline {
-    font-size: 20px;
-    max-width: 700px;
+    font-size: clamp(16px, 2vw, 20px);
+    max-width: min(700px, 90%);
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
 }
 
-/* Section Styles */
 .about-section {
-    padding: 100px 0;
+    padding: clamp(60px, 8vw, 100px) 0;
     position: relative;
 }
 
 .about-section h2 {
-    font-size: 36px;
+    font-size: clamp(28px, 4vw, 36px);
     font-family: var(--font-heading);
-    margin-bottom: 40px;
+    margin-bottom: clamp(25px, 5vw, 40px);
+    line-height: 1.3;
 }
 
 .section-grid {
@@ -68,14 +82,12 @@
     direction: ltr;
 }
 
-/* Mission Section */
 .mission-section {
     background: rgba(10, 14, 23, 0.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
 
-/* Futuristic Orb */
 .futuristic-orb {
     position: relative;
     width: 300px;
@@ -126,7 +138,6 @@
     to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* Features Section */
 .features-section {
     text-align: center;
 }
@@ -182,7 +193,6 @@
     line-height: 1.6;
 }
 
-/* Team Section */
 .team-section {
     background: rgba(10, 14, 23, 0.7);
     backdrop-filter: blur(10px);
@@ -270,7 +280,6 @@
     transform: translateY(-3px);
 }
 
-/* Vision Section */
 .hologram-container {
     position: relative;
     width: 300px;
@@ -327,7 +336,6 @@
     box-shadow: 0 10px 20px rgba(112, 0, 255, 0.4);
 }
 
-/* Responsive Styles */
 @media (max-width: 991px) {
     .section-grid, .section-grid.reverse {
         grid-template-columns: 1fr;
