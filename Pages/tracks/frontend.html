@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend Development Track - Master HTML, CSS, JavaScript and modern frameworks">
+    <meta name="keywords" content="frontend, web development, HTML, CSS, JavaScript, React">
+    <meta name="author" content="FADA'">
+    <meta name="theme-color" content="#0a192f">
+    <title>Frontend Development | FADA'</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png">
+    <meta property="og:title" content="Frontend Development Track | FADA'">
+    <meta property="og:description" content="Master HTML, CSS, JavaScript and modern frameworks">
+    <meta property="og:image" content="../../images/og-image.jpg">
+    <meta property="og:url" content="https://fadacode.com/tracks/frontend">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../css/track-detail.css">
+    <link rel="stylesheet" href="../../css/frontend-track.css">
+    <link rel="stylesheet" href="../../css/external-course-card.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="../../js/menu.js"></script>
+</head>
+<body>
+    <div id="particles-js" class="particles-container"></div>
+    <nav class="glass-nav">
+        <div class="nav-logo">
+            <a href="./index.html"><div class="logo-text">FADA'</div></a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-link"><span>Home</span></a>
+            <a href="./Pages/about.html" class="nav-link"><span>About</span></a>
+            <div class="cta-group">
+                <button class="cta-button" onclick="location.href='./Pages/coming-soon.html'">
+                    <span>Join Now</span>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <section class="track-hero">
+        <div class="track-container">
+            <div class="track-header">
+                <div class="track-badge">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+                <h1>Frontend Development</h1>
+                <div class="accent-line"></div>
+                <p class="track-tagline">Master the art of creating beautiful, responsive, and interactive user interfaces</p>
+                <div class="track-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>12 Weeks</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>25 Projects</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificate</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+                <div class="enroll-now">
+                    <button class="enroll-btn">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="track-overview">
+        <div class="track-container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <h2>Track <span class="highlight">Overview</span></h2>
+                    <p>Frontend development is the art and science of creating the visual and interactive elements of websites and web applications that users directly interact with. This track will take you from the fundamentals of HTML, CSS, and JavaScript to building complex applications with modern frameworks like React.</p>
+                    <p>You'll learn how to create responsive layouts, implement interactive features, optimize performance, and collaborate effectively in development teams. By the end of this track, you'll have a portfolio of projects showcasing your ability to build beautiful and functional user interfaces.</p>
+                    <div class="skill-tags">
+                        <div class="tag">HTML5</div>
+                        <div class="tag">CSS3</div>
+                        <div class="tag">JavaScript</div>
+                        <div class="tag">React</div>
+                        <div class="tag">Redux</div>
+                        <div class="tag">Responsive Design</div>
+                        <div class="tag">UI/UX</div>
+                        <div class="tag">Web Performance</div>
+                    </div>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">24%</div>
+                        <div class="stat-label">Job Growth</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">$75K</div>
+                        <div class="stat-label">Avg. Salary</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Difficulty Level</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="roadmap-section">
+        <div class="track-container">
+            <h2>Learning <span class="highlight">Roadmap</span></h2>
+            <p class="section-intro">Your step-by-step journey to becoming a frontend developer</p>
+            <div class="roadmap">
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">01</div>
+                        <h3>Web Fundamentals</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Master the core technologies of the web: HTML for structure, CSS for styling, and the basics of JavaScript for interactivity.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>HTML5 Semantic Structure</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>CSS Layout & Flexbox</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>CSS Grid Systems</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>JavaScript Basics</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Responsive Design Principles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">02</div>
+                        <h3>JavaScript Mastery</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Deepen your JavaScript knowledge with modern ES6+ features, DOM manipulation, and asynchronous programming.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>ES6+ Features</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>DOM Manipulation</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Event Handling</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Fetch API & Promises</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Async/Await</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">03</div>
+                        <h3> &nbsp;Frontend Frameworks</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Learn React and its ecosystem to build dynamic, component-based user interfaces efficiently.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>React Fundamentals</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Component Architecture</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>State Management with Redux</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>React Router</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>React Hooks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">04</div>
+                        <h3>Advanced Frontend</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Take your skills to the next level with advanced techniques, testing, and optimization.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Testing with Jest & React Testing Library</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Performance Optimization</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Progressive Web Apps (PWA)</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>TypeScript Fundamentals</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Authentication & Authorization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="courses-section">
+        <div class="track-container">
+            <div class="section-header">
+                <h2>Track <span class="highlight">Courses</span></h2>
+                <p class="section-intro">Learn from industry-leading instructors and platforms</p>
+                <div class="accent-line"></div>
+            </div>
+            <div class="external-courses-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; align-items: stretch;">
+                <div class="external-course-card course-item" data-categories="fullstack" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>The Web Developer Bootcamp 2024</h3>
+                        <p>This all-in-one bootcamp covers HTML, CSS, JavaScript, and even some backend basics like Node.js. Build responsive websites and real-world projects.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="react" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Coursera</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Front-End Web Development with React</h3>
+                        <p>Focuses on React.js, teaching components, state management, hooks, and routing through hands-on assignments and a capstone project.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.coursera.org/specializations/front-end-react" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="css" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>freeCodeCamp</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Responsive Web Design Certification</h3>
+                        <p>Master HTML and CSS with a focus on responsive design, accessibility, and modern techniques like Flexbox and Grid. Complete 5 projects.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="javascript" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Frontend Masters</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>JavaScript: The Hard Parts</h3>
+                        <p>Dive into advanced JavaScript concepts like closures, prototypes, and asynchronous programming with live coding and expert guidance.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://frontendmasters.com/courses/javascript-hard-parts/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="react" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Modern React with Redux</h3>
+                        <p>Learn React.js and Redux from scratch, building projects like a weather app and a video streaming service with components, hooks, and state management.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/react-redux/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="javascript" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>The Complete JavaScript Course 2024</h3>
+                        <p>Go from beginner to expert in JavaScript with 68+ hours of content, covering ES6+, OOP, and projects like a Pig Game and recipe app.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/the-complete-javascript-course/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="angular" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Angular - The Complete Guide</h3>
+                        <p>Master Angular with TypeScript, building a full-stack app with Firebase. Covers components, routing, and NgRx for state management.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/the-complete-guide-to-angular-2/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="css" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>CSS - The Complete Guide 2024</h3>
+                        <p>Master CSS, from basics to advanced layouts with Flexbox, Grid, and Sass. Build a responsive portfolio site and more.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="html-css" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>YouTube - freeCodeCamp</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>HTML & CSS Crash Course</h3>
+                        <p>A beginner-friendly introduction to HTML and CSS, covering the basics of web page structure and styling with practical examples.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=mU6anWqZJcc" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="javascript" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>YouTube - The Net Ninja</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>JavaScript Fundamentals</h3>
+                        <p>A comprehensive series covering JavaScript basics including variables, functions, loops, and DOM manipulation with clear explanations.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="react" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>YouTube - Traversy Media</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>React JS Crash Course</h3>
+                        <p>A concise and practical introduction to React, covering components, state, props, and hooks with a mini-project included.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=w7ejDZ8SWv8" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="html-css-arabic" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>YouTube - Elzero Web School</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>HTML - CSS</h3>
+                        <p>A beginner-friendly course in Arabic that teaches HTML and CSS from scratch, focusing on building responsive web pages with practical examples.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPiPLV" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="javascript-arabic" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>YouTube - Elzero Web School</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>JavaScript</h3>
+                        <p>A comprehensive JavaScript course in Arabic covering everything from basic syntax to advanced concepts like asynchronous programming and APIs.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="career-path" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Scrimba</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>The Frontend Developer Career Path</h3>
+                        <p>A comprehensive, interactive program from beginner to job-ready. Code directly in the browser while watching tutorials, with real-world projects and portfolio building.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://scrimba.com/learn/frontend" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-more-container" style="z-index: 101; position: relative;">
+            <button class="show-more-btn" id="showMoreBtn" type="button" style="cursor: pointer;">
+                Show More <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+    <section class="projects-section" style="display: none;">
+        <div class="track-container">
+            <h2>Real-world <span class="highlight">Projects</span></h2>
+            <p class="section-intro">Build a professional portfolio with these hands-on projects</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/portfolio.jpg')">
+                        <div class="project-level">Beginner</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Portfolio</h3>
+                        <p>Create a responsive personal portfolio showcasing your skills and projects using HTML, CSS, and basic JavaScript.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/weather-app.jpg')">
+                        <div class="project-level">Intermediate</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>Build a weather application that fetches real-time data from a REST API and displays dynamic information.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>APIs</span>
+                            <span>Async/Await</span>
+                            <span>DOM Manipulation</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/ecommerce.jpg')">
+                        <div class="project-level">Advanced</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Develop a full-featured e-commerce site with product listings, cart functionality, and checkout process.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Redux</span>
+                            <span>Styled Components</span>
+                            <span>Payment Integration</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/social-app.jpg')">
+                        <div class="project-level">Advanced</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Social Media Dashboard</h3>
+                        <p>Create a feature-rich social media dashboard with real-time updates, notifications, and user interactions.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>Authentication</span>
+                            <span>Real-time Database</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-projects">
+                <a href="#" class="btn-primary">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="career-section">
+        <div class="track-container">
+            <h2>Career <span class="highlight">Outcomes</span></h2>
+            <p class="section-intro">Where this skillset can take your career</p>
+            <div class="careers-grid">
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend Developer</h3>
+                    <p>Build user interfaces for websites and web applications at tech companies, agencies, or as a freelancer.</p>
+                    <div class="salary-range">
+                        <span>$65,000 - $110,000</span>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>UI Developer</h3>
+                    <p>Focus on implementing visual designs and creating engaging user experiences for web products.</p>
+                    <div class="salary-range">
+                        <span>$70,000 - $115,000</span>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>React Developer</h3>
+                    <p>Specialize in building applications with React and its ecosystem of tools and libraries.</p>
+                    <div class="salary-range">
+                        <span>$80,000 - $130,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="enroll-cta">
+        <div class="track-container">
+            <div class="cta-wrapper">
+                <div class="cta-content">
+                    <h2>Ready to Start Your <span class="highlight">Frontend Journey?</span></h2>
+                    <p>Join thousands of students who have successfully transformed their careers through our frontend development track.</p>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn-primary">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-outline">
+                        <span>Download Syllabus</span>
+                        <i class="fas fa-file-download"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../js/animations.js"></script>
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/track-detail.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const coursesPerPage = 4;
+            const courses = document.querySelectorAll('.course-item');
+            const showMoreBtn = document.getElementById('showMoreBtn');
+            if (!document.getElementById('course-visibility-styles')) {
+                const style = document.createElement('style');
+                style.id = 'course-visibility-styles';
+                style.textContent = `.course-item.hidden { display: none !important; }`;
+                document.head.appendChild(style);
+            }
+            setTimeout(() => {
+                courses.forEach((course, index) => {
+                    if (index >= coursesPerPage) {
+                        course.classList.add('hidden');
+                    }
+                });
+            }, 100);
+            if (courses.length <= coursesPerPage) {
+                showMoreBtn.parentElement.style.display = 'none';
+            }
+            let expanded = false;
+            showMoreBtn.addEventListener('click', function() {
+                expanded = !expanded;
+                if (expanded) {
+                    courses.forEach(course => course.classList.remove('hidden'));
+                    showMoreBtn.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
+                    showMoreBtn.classList.add('active');
+                } else {
+                    courses.forEach((course, index) => {
+                        if (index >= coursesPerPage) {
+                            course.classList.add('hidden');
+                        }
+                    });
+                    showMoreBtn.innerHTML = 'Show More <i class="fas fa-chevron-down"></i>';
+                    showMoreBtn.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

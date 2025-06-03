@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Backend Development Track - Master server-side programming and database management">
+    <meta name="keywords" content="backend, server-side, Node.js, databases, API development">
+    <meta name="author" content="FADA'">
+    <meta name="theme-color" content="#0a192f">
+    <title>Backend Development | FADA'</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png">
+    <meta property="og:title" content="Backend Development Track | FADA'">
+    <meta property="og:description" content="Master server-side programming and database management">
+    <meta property="og:image" content="../../images/og-image.jpg">
+    <meta property="og:url" content="https://fadacode.com/tracks/backend">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../css/track-detail.css">
+    <link rel="stylesheet" href="../../css/backend-track.css">
+    <link rel="stylesheet" href="../../css/external-course-card.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="../../js/menu.js"></script>
+</head>
+<body>
+    <div id="particles-js" class="particles-container"></div>
+    <nav class="glass-nav">
+        <div class="nav-logo">
+            <a href="./index.html"><div class="logo-text">FADA'</div></a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-link"><span>Home</span></a>
+            <a href="./Pages/about.html" class="nav-link"><span>About</span></a>
+            <div class="cta-group">
+                <button class="cta-button" onclick="location.href='./Pages/coming-soon.html'">
+                    <span>Join Now</span>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <section class="track-hero">
+        <div class="track-container">
+            <div class="track-header">
+                <div class="track-badge">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-server"></i>
+                    </div>
+                </div>
+                <h1>Backend Development</h1>
+                <div class="accent-line"></div>
+                <p class="track-tagline">Master server-side programming and build robust, scalable applications</p>
+                <div class="track-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>16 Weeks</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>20 Projects</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificate</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+                <div class="enroll-now">
+                    <button class="enroll-btn">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="track-overview">
+        <div class="track-container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <h2>Track <span class="highlight">Overview</span></h2>
+                    <p>Backend development is the foundation of web applications, handling data storage, business logic, and server-side operations. This track will take you from the basics of server-side programming to building complex, scalable applications using Node.js, databases, and modern backend technologies.</p>
+                    <p>You'll learn how to design and implement RESTful APIs, work with databases, handle authentication and authorization, and deploy applications to the cloud. By the end of this track, you'll be able to build robust backend systems that power modern web applications.</p>
+                    <div class="skill-tags">
+                        <div class="tag">Node.js</div>
+                        <div class="tag">Express.js</div>
+                        <div class="tag">MongoDB</div>
+                        <div class="tag">SQL</div>
+                        <div class="tag">REST APIs</div>
+                        <div class="tag">Authentication</div>
+                        <div class="tag">Docker</div>
+                        <div class="tag">Cloud Deployment</div>
+                    </div>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">22%</div>
+                        <div class="stat-label">Job Growth</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">$85K</div>
+                        <div class="stat-label">Avg. Salary</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">18+</div>
+                        <div class="stat-label">Difficulty Level</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="roadmap-section">
+        <div class="track-container">
+            <h2>Learning <span class="highlight">Roadmap</span></h2>
+            <p class="section-intro">Your step-by-step journey to becoming a backend developer</p>
+            <div class="roadmap">
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">01</div>
+                        <h3>Backend Fundamentals</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Learn the core concepts of backend development, including server-side programming, HTTP protocols, and basic database operations.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Node.js Basics</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Express.js Framework</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>HTTP & REST APIs</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Database Fundamentals</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Authentication Basics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">02</div>
+                        <h3>Database Mastery</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Master both SQL and NoSQL databases, learning how to design efficient database schemas and optimize queries.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>MongoDB & Mongoose</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>SQL & PostgreSQL</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Database Design</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Query Optimization</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Data Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">03</div>
+                        <h3>Advanced Backend</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Dive into advanced backend concepts like microservices, real-time applications, and security best practices.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Microservices Architecture</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>WebSockets & Real-time</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>API Security</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>GraphQL</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Testing & Debugging</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">04</div>
+                        <h3>DevOps & Deployment</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Learn how to deploy and maintain backend applications using modern DevOps practices and cloud platforms.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Docker & Containers</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>CI/CD Pipelines</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Cloud Platforms (AWS/Azure)</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Monitoring & Logging</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Performance Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="courses-section">
+        <div class="track-container">
+            <div class="section-header">
+                <h2>Track <span class="highlight">Courses</span></h2>
+                <p class="section-intro">Learn from industry-leading instructors and platforms</p>
+                <div class="accent-line"></div>
+            </div>
+            <div class="external-courses-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; align-items: stretch;">
+                <div class="external-course-card course-item" data-categories="nodejs" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Node.js - The Complete Guide</h3>
+                        <p>Master Node.js from scratch, building REST APIs, GraphQL APIs, authentication, file uploads, and more with Node.js, Express, and MongoDB.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/nodejs-the-complete-guide/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="mongodb" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>MongoDB - The Complete Developer's Guide</h3>
+                        <p>Learn MongoDB from scratch, including CRUD operations, indexing, aggregation, and building a complete application with Node.js and Express.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/mongodb-the-complete-developers-guide/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="sql" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>SQL & Database Design</h3>
+                        <p>Master SQL and database design principles, from basic queries to complex joins, stored procedures, and database optimization.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/sql-and-database-design/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="javascript" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Frontend Masters</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>JavaScript: The Hard Parts</h3>
+                        <p>Master advanced JavaScript concepts like closures, prototypes, and asynchronous programming with live coding and expert guidance.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://frontendmasters.com/courses/javascript-hard-parts/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="graphql" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>GraphQL Complete Guide</h3>
+                        <p>Learn GraphQL from scratch, building APIs with Node.js, Express, and Apollo Server, including authentication and real-time subscriptions.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/graphql-complete-guide/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="nodejs" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Advanced Node.js</h3>
+                        <p>Take your Node.js skills to the next level with advanced topics like streams, clustering, performance optimization, and security.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/advanced-nodejs/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="devops" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Docker & Kubernetes</h3>
+                        <p>Master containerization with Docker and orchestration with Kubernetes, including deployment, scaling, and monitoring.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="security" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>API Security</h3>
+                        <p>Learn how to secure your APIs with authentication, authorization, rate limiting, and other security best practices.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/api-security/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="sql" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>PostgreSQL for Developers</h3>
+                        <p>Master PostgreSQL, from basic queries to advanced features like stored procedures, triggers, and performance optimization.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/postgresql-for-developers/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="microservices" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Node.js Microservices</h3>
+                        <p>Learn how to build and deploy microservices with Node.js, including service discovery, load balancing, and monitoring.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/nodejs-microservices/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="testing" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Testing Node.js Applications</h3>
+                        <p>Master testing Node.js applications with Jest, including unit testing, integration testing, and end-to-end testing.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/testing-nodejs-applications/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="nodejs" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>YouTube - Traversy Media</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Node.js Crash Course</h3>
+                        <p>A concise introduction to Node.js, covering the basics of server-side JavaScript, Express, and building REST APIs.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=fBNz5xF-Kx4" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-more-container" style="z-index: 101; position: relative;">
+            <button class="show-more-btn" id="showMoreBtn" type="button" style="cursor: pointer;">
+                Show More <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+    <section class="projects-section" style="display: none;">
+        <div class="track-container">
+            <h2>Real-world <span class="highlight">Projects</span></h2>
+            <p class="section-intro">Build a professional portfolio with these hands-on projects</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/ecommerce-api.jpg')">
+                        <div class="project-level">Beginner</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce API</h3>
+                        <p>Build a RESTful API for an e-commerce platform with user authentication, product management, and order processing.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT Auth</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/real-time-chat.jpg')">
+                        <div class="project-level">Intermediate</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-time Chat Application</h3>
+                        <p>Create a real-time chat application with WebSocket integration, user authentication, and message persistence.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Socket.io</span>
+                            <span>MongoDB</span>
+                            <span>Redis</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/microservices.jpg')">
+                        <div class="project-level">Advanced</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Microservices Architecture</h3>
+                        <p>Design and implement a microservices-based application with service discovery, load balancing, and containerization.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/analytics-platform.jpg')">
+                        <div class="project-level">Advanced</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Platform</h3>
+                        <p>Build a scalable analytics platform that processes and visualizes large amounts of data in real-time.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-projects">
+                <a href="#" class="btn-primary">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="career-section">
+        <div class="track-container">
+            <h2>Career <span class="highlight">Outcomes</span></h2>
+            <p class="section-intro">Where this skillset can take your career</p>
+            <div class="careers-grid">
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Developer</h3>
+                    <p>Build and maintain server-side applications, APIs, and databases for web and mobile applications.</p>
+                    <div class="salary-range">
+                        <span>$75,000 - $120,000</span>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Developer</h3>
+                    <p>Design and optimize database systems, write complex queries, and ensure data integrity.</p>
+                    <div class="salary-range">
+                        <span>$80,000 - $125,000</span>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>DevOps Engineer</h3>
+                    <p>Manage deployment pipelines, cloud infrastructure, and ensure application reliability.</p>
+                    <div class="salary-range">
+                        <span>$90,000 - $140,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="enroll-cta">
+        <div class="track-container">
+            <div class="cta-wrapper">
+                <div class="cta-content">
+                    <h2>Ready to Start Your <span class="highlight">Backend Journey?</span></h2>
+                    <p>Join thousands of students who have successfully transformed their careers through our backend development track.</p>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn-primary">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-outline">
+                        <span>Download Syllabus</span>
+                        <i class="fas fa-file-download"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../js/animations.js"></script>
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/track-detail.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const coursesPerPage = 4;
+            const courses = document.querySelectorAll('.course-item');
+            const showMoreBtn = document.getElementById('showMoreBtn');
+            if (!document.getElementById('course-visibility-styles')) {
+                const style = document.createElement('style');
+                style.id = 'course-visibility-styles';
+                style.textContent = `.course-item.hidden { display: none !important; }`;
+                document.head.appendChild(style);
+            }
+            setTimeout(() => {
+                courses.forEach((course, index) => {
+                    if (index >= coursesPerPage) {
+                        course.classList.add('hidden');
+                    }
+                });
+            }, 100);
+            if (courses.length <= coursesPerPage) {
+                showMoreBtn.parentElement.style.display = 'none';
+            }
+            let expanded = false;
+            showMoreBtn.addEventListener('click', function() {
+                expanded = !expanded;
+                if (expanded) {
+                    courses.forEach(course => course.classList.remove('hidden'));
+                    showMoreBtn.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
+                    showMoreBtn.classList.add('active');
+                } else {
+                    courses.forEach((course, index) => {
+                        if (index >= coursesPerPage) {
+                            course.classList.add('hidden');
+                        }
+                    });
+                    showMoreBtn.innerHTML = 'Show More <i class="fas fa-chevron-down"></i>';
+                    showMoreBtn.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

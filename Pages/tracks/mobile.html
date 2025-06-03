@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mobile App Development Track - Master iOS, Android, and cross-platform technologies">
+    <meta name="keywords" content="mobile app development, iOS, Android, React Native, Flutter, Swift, Kotlin">
+    <meta name="author" content="FADA'">
+    <meta name="theme-color" content="#0a192f">
+    <title>Mobile App Development | FADA'</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png">
+    <meta property="og:title" content="Mobile App Development Track | FADA'">
+    <meta property="og:description" content="Master iOS, Android, and cross-platform technologies">
+    <meta property="og:image" content="../../images/og-image.jpg">
+    <meta property="og:url" content="https://fadacode.com/tracks/mobile">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../css/track-detail.css">
+    <link rel="stylesheet" href="../../css/frontend-track.css">
+    <link rel="stylesheet" href="../../css/external-course-card.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="../../js/menu.js"></script>
+</head>
+<body>
+    <div id="particles-js" class="particles-container"></div>
+    <nav class="glass-nav">
+        <div class="nav-logo">
+            <a href="./index.html"><div class="logo-text">FADA'</div></a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-link"><span>Home</span></a>
+            <a href="./Pages/about.html" class="nav-link"><span>About</span></a>
+            <div class="cta-group">
+                <button class="cta-button" onclick="location.href='./Pages/coming-soon.html'">
+                    <span>Join Now</span>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <section class="track-hero">
+        <div class="track-container">
+            <div class="track-header">
+                <div class="track-badge">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                </div>
+                <h1>Mobile App Development</h1>
+                <div class="accent-line"></div>
+                <p class="track-tagline">Master the art of creating powerful, intuitive mobile applications for iOS and Android</p>
+                <div class="track-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>14 Weeks</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>20 Projects</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificate</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                </div>
+                <div class="enroll-now">
+                    <button class="enroll-btn">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="track-overview">
+        <div class="track-container">
+            <div class="overview-grid">
+                <div class="overview-content">
+                    <h2>Track <span class="highlight">Overview</span></h2>
+                    <p>Mobile app development focuses on creating software applications that run on mobile devices like smartphones and tablets. This track will guide you through both native and cross-platform development approaches, teaching you to build engaging, user-friendly apps for iOS and Android platforms.</p>
+                    <p>You'll learn how to design intuitive user interfaces, implement device functionality like cameras and GPS, manage app data locally and in the cloud, and publish your apps to app stores. By the end of this track, you'll have a portfolio of mobile applications showcasing your ability to deliver engaging mobile experiences.</p>
+                    <div class="skill-tags">
+                        <div class="tag">React Native</div>
+                        <div class="tag">Flutter</div>
+                        <div class="tag">Swift</div>
+                        <div class="tag">Kotlin</div>
+                        <div class="tag">UI/UX for Mobile</div>
+                        <div class="tag">App State Management</div>
+                        <div class="tag">API Integration</div>
+                        <div class="tag">App Publishing</div>
+                    </div>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <div class="stat-value">26%</div>
+                        <div class="stat-label">Job Growth</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">$90K</div>
+                        <div class="stat-label">Avg. Salary</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">17+</div>
+                        <div class="stat-label">Difficulty Level</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="roadmap-section">
+        <div class="track-container">
+            <h2>Learning <span class="highlight">Roadmap</span></h2>
+            <p class="section-intro">Your step-by-step journey to becoming a mobile app developer</p>
+            <div class="roadmap">
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">01</div>
+                        <h3>Mobile Development Fundamentals</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Learn the core concepts of mobile development, programming fundamentals, and the mobile app ecosystem.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Mobile Platforms Overview</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>JavaScript/TypeScript Essentials</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Mobile UI/UX Principles</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Development Environment Setup</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Version Control with Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">02</div>
+                        <h3>Cross-Platform Development</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Master cross-platform frameworks to build apps that work on both iOS and Android from a single codebase.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>React Native Fundamentals</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Flutter & Dart Basics</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Component-Based Architecture</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Navigation & Routing</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Styling & Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">03</div>
+                        <h3>Native Development</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Explore native development for iOS with Swift and Android with Kotlin to create platform-specific experiences.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Swift & iOS Fundamentals</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Kotlin & Android Basics</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Native UI Components</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Platform-Specific APIs</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Native App Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="roadmap-phase">
+                    <div class="phase-header">
+                        <div class="phase-number">04</div>
+                        <h3>Advanced Mobile Development</h3>
+                    </div>
+                    <div class="phase-content">
+                        <p>Master advanced concepts to create full-featured, production-ready mobile applications.</p>
+                        <div class="phase-topics">
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>State Management</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>API Integration & Networking</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Data Persistence & Storage</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Authentication & Security</span>
+                            </div>
+                            <div class="topic">
+                                <i class="fas fa-check-circle"></i>
+                                <span>App Testing & Deployment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="courses-section">
+        <div class="track-container">
+            <div class="section-header">
+                <h2>Track <span class="highlight">Courses</span></h2>
+                <p class="section-intro">Learn from industry-leading instructors and platforms</p>
+                <div class="accent-line"></div>
+            </div>
+            <div class="external-courses-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; align-items: stretch;">
+                <div class="external-course-card course-item" data-categories="react-native" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>React Native - The Practical Guide</h3>
+                        <p>Build native mobile apps for iOS and Android using React Native. Master Hooks, Navigation, and Redux while creating real-world projects.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/react-native-the-practical-guide/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="flutter" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Flutter & Dart - The Complete Guide</h3>
+                        <p>Learn Flutter and Dart from scratch and build beautiful, responsive, cross-platform apps for Android and iOS.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/flutter-bootcamp-with-dart/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="ios" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>iOS & Swift - The Complete iOS App Development Bootcamp</h3>
+                        <p>Become a professional iOS developer with Swift. Build over 15 apps including games, AR experiences, and clones of popular apps.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/ios-13-app-development-bootcamp/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="android" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Android Kotlin Development Masterclass</h3>
+                        <p>Learn Android app development with Kotlin from zero to professional level. Build multiple real-world applications with modern techniques.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/android-kotlin-developer/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="react-native" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>React Native: Advanced Concepts</h3>
+                        <p>Take your React Native skills to the next level with advanced animations, complex navigation patterns, state management, and app publishing.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/react-native-advanced/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="flutter" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Pluralsight</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Flutter State Management Solutions</h3>
+                        <p>Compare and implement different state management approaches in Flutter including Provider, Riverpod, BLoC, and Redux.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.pluralsight.com/courses/flutter-state-management-solutions" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="ios" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>iOS & Swift - Data Persistence and Core Data</h3>
+                        <p>Learn how to store and retrieve data in iOS applications using various persistence methods including Core Data, Realm, and Firebase.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/ios-swift-persistence/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="android" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Pluralsight</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Android Architecture Components</h3>
+                        <p>Master modern Android development with Jetpack components including ViewModel, LiveData, Room, and Navigation to build robust applications.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.pluralsight.com/courses/android-architecture-components" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="design" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Coursera</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Mobile UI/UX Design Principles</h3>
+                        <p>Learn the fundamentals of designing effective and engaging mobile interfaces following platform guidelines and best practices.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.coursera.org/learn/mobile-design" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="backend" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>Udemy</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Firebase for Mobile Development</h3>
+                        <p>Integrate Firebase services into your mobile apps for authentication, real-time databases, cloud storage, analytics, and more.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.udemy.com/course/firebase-course/" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="testing" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>LinkedIn Learning</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>Testing Mobile Applications</h3>
+                        <p>Learn effective testing strategies for mobile apps including unit testing, integration testing, UI testing, and end-to-end testing frameworks.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.linkedin.com/learning/testing-mobile-applications" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="external-course-card course-item" data-categories="arabic" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+                    <div class="card-top">
+                        <div class="course-platform">
+                            <span>YouTube - Elzero Web School</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+                        <h3>React Native in Arabic</h3>
+                        <p>A comprehensive Arabic course on React Native covering components, navigation, styling, state management, and API integration.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAxRKMnGZit9KqZPME8v3kzO" target="_blank" class="card-button">
+                            <span>Go to Course</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-more-container" style="z-index: 101; position: relative;">
+            <button class="show-more-btn" id="showMoreBtn" type="button" style="cursor: pointer;">
+                Show More <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+    <section class="projects-section" style="display: none;">
+        <div class="track-container">
+            <h2>Real-world <span class="highlight">Projects</span></h2>
+            <p class="section-intro">Build a professional portfolio with these hands-on projects</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/weather-app.jpg')">
+                        <div class="project-level">Beginner</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Forecast App</h3>
+                        <p>Create a mobile weather application that fetches real-time weather data and provides forecasts with a clean, intuitive interface.</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>API Integration</span>
+                            <span>Geolocation</span>
+                            <span>UI Components</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/task-manager.jpg')">
+                        <div class="project-level">Intermediate</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Build a productivity app with task categories, reminders, progress tracking, and cloud synchronization across devices.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>State Management</span>
+                            <span>Local Notifications</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/fitness-app.jpg')">
+                        <div class="project-level">Advanced</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Fitness Tracking App</h3>
+                        <p>Develop a comprehensive fitness application with workout plans, progress tracking, health metrics, and social features.</p>
+                        <div class="project-tech">
+                            <span>Swift/iOS</span>
+                            <span>HealthKit</span>
+                            <span>Core Data</span>
+                            <span>User Authentication</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img" style="background-image: url('../../images/projects/ecommerce.jpg')">
+                        <div class="project-level">Advanced</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Mobile App</h3>
+                        <p>Create a full-featured shopping application with product listings, cart functionality, payment integration, and order tracking.</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Redux</span>
+                            <span>Payment Gateway</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn-outline">View Details</a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-projects">
+                <a href="#" class="btn-primary">
+                    <span>View All Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="career-section">
+        <div class="track-container">
+            <h2>Career <span class="highlight">Outcomes</span></h2>
+            <p class="section-intro">Where this skillset can take your career</p>
+            <div class="careers-grid">
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Developer</h3>
+                    <p>Build native and cross-platform mobile applications for iOS and Android at tech companies, startups, or as a freelancer.</p>
+                    <div class="salary-range">
+                        <span>$80,000 - $125,000</span>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>React Native Developer</h3>
+                    <p>Specialize in cross-platform development using React Native to create apps that work seamlessly across multiple devices.</p>
+                    <div class="salary-range">
+                        <span>$85,000 - $130,000</span>
+                    </div>
+                </div>
+                <div class="career-card">
+                    <div class="career-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Mobile Solutions Architect</h3>
+                    <p>Design and implement complex mobile application systems and guide technical decisions for mobile products.</p>
+                    <div class="salary-range">
+                        <span>$110,000 - $160,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="enroll-cta">
+        <div class="track-container">
+            <div class="cta-wrapper">
+                <div class="cta-content">
+                    <h2>Ready to Start Your <span class="highlight">Mobile Development Journey?</span></h2>
+                    <p>Join thousands of students who have successfully transformed their careers through our mobile app development track.</p>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn-primary">
+                        <span>Enroll Now</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn-outline">
+                        <span>Download Syllabus</span>
+                        <i class="fas fa-file-download"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../../js/animations.js"></script>
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/track-detail.js"></script>
+</body>
+</html>

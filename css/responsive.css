@@ -1,0 +1,246 @@
+.responsive-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.track-hero {
+    position: relative;
+    z-index: 5;
+    display: block !important;
+    min-height: auto;
+    width: 100%;
+    overflow: visible;
+    margin-bottom: 0; 
+    padding-top: 120px;
+}
+
+.track-container {
+    position: relative;
+    z-index: 10;
+}
+
+.track-header {
+    position: relative;
+    z-index: 15;
+}
+
+.particles-container {
+    z-index: 1;
+}
+
+.roadmap {
+    display: grid;
+    gap: 30px;
+}
+
+.roadmap-phase {
+    position: relative;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+@media screen and (max-width: 900px) {
+    .roadmap {
+        gap: 20px;
+    }
+
+    
+    .roadmap-phase {
+        padding: 20px;
+    }
+
+    .phase-content {
+        padding-left: 40px;
+        margin-top: 60px;
+    }
+    
+    .phase-header {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 23px;
+        margin-left: 35px;
+    }
+    
+    .phase-number {
+        font-size: 1.5rem;
+        margin-right: 15px;
+    }
+    
+    
+    .phase-topics {
+        grid-template-columns: 1fr;
+    }
+    
+    .phase-header h3 {
+        margin-left: 20px; 
+    }
+    
+    .track-badge {
+        display: none;
+    }
+    
+    .track-hero {
+        padding: 100px 0 0; 
+    }
+    
+    .track-meta,
+    .enroll-now {
+        display: none;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: rgba(13, 21, 34, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+        z-index: 1000;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.2);
+        padding: 60px 20px 40px;
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links a {
+        display: block !important;
+        margin: 15px 0;
+        font-size: 1.2rem;
+        opacity: 0.9;
+        color: var(--text-color);
+        text-align: center;
+        width: 100%;
+    }
+    
+    .menu-toggle {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        z-index: 1010;
+        cursor: pointer;
+    }
+
+    .menu-toggle .bar {
+        width: 30px;
+        height: 3px;
+        background-color: var(--primary-color);
+        margin: 4px 0;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-toggle.active {
+        background: transparent;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+}
+.responsive-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .responsive-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .responsive-grid.reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .section-graphic {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+}
+
+.responsive-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .responsive-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-card {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    
+    p {
+        font-size: 0.95rem;
+    }
+    
+    .about-tagline {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .about-hero {
+        padding: 80px 0 40px;
+    }
+    
+    .about-section {
+        padding: 40px 0;
+    }
+    
+    .futuristic-orb, .hologram-container {
+        transform: scale(0.8);
+    }
+    
+    .track-hero {
+        padding: 90px 0 0; 
+}

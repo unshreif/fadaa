@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore FADA's comprehensive curriculum - Find courses in web development, mobile app development, data science, and more">
+    <meta name="keywords" content="coding courses, programming courses, web development, mobile development, data science, learning">
+    <meta name="author" content="FADA'">
+    
+    <meta name="theme-color" content="#0a192f">
+    
+    <title>Courses | FADA'</title>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    
+    <meta property="og:title" content="Course Catalog | FADA'">
+    <meta property="og:description" content="Browse our complete catalog of tech courses across multiple disciplines">
+    <meta property="og:image" content="../images/og-image.jpg">
+    <meta property="og:url" content="https://fadacode.com/courses">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/courses.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js" class="particles-container"></div>
+    
+    <nav class="glass-nav">
+        <div class="nav-logo">
+            <div class="logo-text">FADA'</div>
+        </div>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link"><span>Home</span></a>
+            <a href="about.html" class="nav-link"><span>About</span></a>
+            <a href="get-started.html" class="nav-link"><span>Tracks</span></a>
+            <div class="cta-group">
+                <button class="cta-button" onclick="location.href='./Pages/coming-soon.html'">
+                    <span>Join Now</span>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    
+    <section class="courses-hero">
+        <div class="courses-container">
+            <div class="courses-header">
+                <h1>Our <span class="highlight">Courses</span></h1>
+                <div class="accent-line"></div>
+                <p class="courses-tagline">Comprehensive curriculum from industry experts across multiple technology domains</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="filter-section">
+        <div class="courses-container">
+            <div class="filter-wrapper">
+                <div class="filter-group">
+                    <label>Track:</label>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-track="all">All Tracks</button>
+                        <button class="filter-btn" data-track="frontend">Frontend</button>
+                        <button class="filter-btn" data-track="backend">Backend</button>
+                        <button class="filter-btn" data-track="fullstack">Full Stack</button>
+                        <button class="filter-btn" data-track="mobile">Mobile</button>
+                        <button class="filter-btn" data-track="datascience">Data Science</button>
+                        <button class="filter-btn" data-track="devops">DevOps</button>
+                        <button class="filter-btn" data-track="uiux">UI/UX</button>
+                        <button class="filter-btn" data-track="security">Security</button>
+                    </div>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" id="course-search" placeholder="Search courses...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="selected-filters">
+                <p>Showing <span id="course-count">24</span> courses</p>
+                <button id="clear-filters">Clear All Filters</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="all-courses-section">
+        <div class="courses-container">
+            <div class="courses-grid">
+                <div class="course-card" data-track="frontend" data-level="beginner">
+                    <div class="course-header frontend">
+                        <div class="course-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Beginner</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>HTML & CSS Fundamentals</h3>
+                        <p>Learn the core building blocks of web development and create responsive, well-structured websites.</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-book"></i>
+                                <span>12 Lessons</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>5 Projects</span>
+                            </div>
+                        </div>
+                        <a href="#" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-track="frontend" data-level="intermediate">
+                    <div class="course-header frontend">
+                        <div class="course-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Intermediate</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 5 weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>JavaScript & DOM Manipulation</h3>
+                        <p>Master JavaScript fundamentals and learn to create interactive web applications.</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-book"></i>
+                                <span>15 Lessons</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>4 Projects</span>
+                            </div>
+                        </div>
+                        <a href="#" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-track="frontend" data-level="advanced">
+                    <div class="course-header frontend">
+                        <div class="course-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Advanced</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 6 weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>React Framework & Ecosystem</h3>
+                        <p>Build modern web applications with React, Redux, and related libraries.</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-book"></i>
+                                <span>18 Lessons</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>3 Projects</span>
+                            </div>
+                        </div>
+                        <a href="#" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-track="backend" data-level="beginner">
+                    <div class="course-header backend">
+                        <div class="course-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Beginner</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 3 weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Node.js Fundamentals</h3>
+                        <p>Learn the core concepts of Node.js including asynchronous programming, event loops, and building server applications.</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-book"></i>
+                                <span>14 Lessons</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>5 Projects</span>
+                            </div>
+                        </div>
+                        <a href="#" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-track="backend" data-level="intermediate">
+                    <div class="course-header backend">
+                        <div class="course-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Intermediate</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Database Systems</h3>
+                        <p>Master both SQL and NoSQL databases, including data modeling, optimization, and integration with backend applications.</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-book"></i>
+                                <span>16 Lessons</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>4 Projects</span>
+                            </div>
+                        </div>
+                        <a href="#" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-track="backend" data-level="advanced">
+                    <div class="course-header backend">
+                        <div class="course-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Advanced</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Authentication & Security</h3>
+                        <p>Implement secure user authentication, authorization systems, and protect applications from common security threats.</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-book"></i>
+                                <span>15 Lessons</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>5 Projects</span>
+                            </div>
+                        </div>
+                        <a href="#" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-track="fullstack" data-level="intermediate">
+                    <div class="course-header fullstack">
+                        <div class="course-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Intermediate</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 6 weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>MERN Stack Development</h3>
+                        <p>Build full-stack applications using MongoDB, Express.js, React, and Node.js with seamless integration.</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-book"></i>
+                                <span>20 Lessons</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>3 Projects</span>
+                            </div>
+                        </div>
+                        <a href="#" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-track="mobile" data-level="fundamental">
+                    <div class="course-header mobile">
+                        <div class="course-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Beginner</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>React Native Essentials</h3>
+                        <p>Master the fundamentals of React Native to build cross-platform mobile applications that work on both iOS and Android.</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-book"></i>
+                                <span>16 Lessons</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>4 Projects</span>
+                            </div>
+                        </div>
+                        <a href="#" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-track="datascience" data-level="beginner">
+                    <div class="course-header datascience">
+                        <div class="course-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Beginner</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Python for Data Science</h3>
+                        <p>Learn Python programming and essential libraries for data manipulation, analysis, and visualization.</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-book"></i>
+                                <span>16 Lessons</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>5 Projects</span>
+                            </div>
+                        </div>
+                        <a href="#" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-track="devops" data-level="beginner">
+                    <div class="course-header devops">
+                        <div class="course-icon">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Beginner</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 3 weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Docker & Containerization</h3>
+                        <p>Learn how to containerize applications, work with Docker images, networks, volumes, and multi-container setups.</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-book"></i>
+                                <span>12 Lessons</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>4 Projects</span>
+                            </div>
+                        </div>
+                        <a href="#" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-track="uiux" data-level="beginner">
+                    <div class="course-header uiux">
+                        <div class="course-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Beginner</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 3 weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Visual Design Fundamentals</h3>
+                        <p>Master the core principles of visual design including color theory, typography, layout, and composition.</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-book"></i>
+                                <span>12 Lessons</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>5 Projects</span>
+                            </div>
+                        </div>
+                        <a href="#" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="course-card" data-track="security" data-level="beginner">
+                    <div class="course-header security">
+                        <div class="course-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="course-meta">
+                            <span class="course-tag">Beginner</span>
+                            <span class="course-duration"><i class="fas fa-clock"></i> 4 weeks</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Cybersecurity Fundamentals</h3>
+                        <p>Build a strong foundation in security principles, threats, vulnerabilities, and basic defensive measures.</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-book"></i>
+                                <span>14 Lessons</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>4 Projects</span>
+                            </div>
+                        </div>
+                        <a href="#" class="course-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more">
+                <button class="load-more-btn">
+                    <span>Load More Courses</span>
+                    <i class="fas fa-spinner"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="learning-paths-section">
+        <div class="courses-container">
+            <div class="section-header">
+                <h2>Learning <span class="highlight">Paths</span></h2>
+                <p>Structured curriculum to guide your career journey</p>
+            </div>
+            
+            <div class="paths-grid">
+                <a href="tracks/frontend.html" class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>12 courses • 25 projects</p>
+                </a>
+                
+                <a href="tracks/backend.html" class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>14 courses • 18 projects</p>
+                </a>
+                
+                <a href="tracks/fullstack.html" class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Full Stack Development</h3>
+                    <p>24 courses • 15 projects</p>
+                </a>
+                
+                <a href="tracks/mobile.html" class="path-card">
+                    <div class="path-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>16 courses • 12 projects</p>
+                </a>
+            </div>
+            
+            <div class="paths-cta">
+                <a href="get-started.html" class="btn-primary">
+                    <span>View All Learning Paths</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/animations.js"></script>
+    <script>
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: "#ffffff" },
+                    opacity: { value: 0.5, random: true },
+                    size: { value: 3, random: true },
+                    line_linked: { 
+                        enable: true, 
+                        distance: 150, 
+                        color: "#ffffff", 
+                        opacity: 0.2, 
+                        width: 1 
+                    },
+                    move: { enable: true, speed: 1, random: true }
+                }
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const courseCards = document.querySelectorAll('.course-card');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const clearFiltersBtn = document.getElementById('clear-filters');
+            const courseSearch = document.getElementById('course-search');
+            const courseCountEl = document.getElementById('course-count');
+            
+            let activeFilters = {
+                track: 'all',
+                level: 'all',
+                search: ''
+            };
+            
+            function applyFilters() {
+                let visibleCount = 0;
+                
+                courseCards.forEach(card => {
+                    const trackMatch = activeFilters.track === 'all' || card.dataset.track === activeFilters.track;
+                    const levelMatch = activeFilters.level === 'all' || card.dataset.level === activeFilters.level;
+                    
+                    const cardTitle = card.querySelector('h3').textContent.toLowerCase();
+                    const cardDesc = card.querySelector('p').textContent.toLowerCase();
+                    const searchTerm = activeFilters.search.toLowerCase();
+                    const searchMatch = searchTerm === '' || 
+                                       cardTitle.includes(searchTerm) || 
+                                       cardDesc.includes(searchTerm);
+                    
+                    if (trackMatch && levelMatch && searchMatch) {
+                        card.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                courseCountEl.textContent = visibleCount;
+            }
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const parentGroup = this.closest('.filter-options');
+                    parentGroup.querySelectorAll('.filter-btn').forEach(b => {
+                        b.classList.remove('active');
+                    });
+                    
+                    this.classList.add('active');
+                    
+                    if (this.dataset.track) {
+                        activeFilters.track = this.dataset.track;
+                    } else if (this.dataset.level) {
+                        activeFilters.level = this.dataset.level;
+                    }
+                    
+                    applyFilters();
+                });
+            });
+            
+            clearFiltersBtn.addEventListener('click', function() {
+                activeFilters.track = 'all';
+                activeFilters.level = 'all';
+                activeFilters.search = '';
+                
+                filterButtons.forEach(btn => {
+                    if (btn.dataset.track === 'all' || btn.dataset.level === 'all') {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+                
+                courseSearch.value = '';
+                
+                applyFilters();
+            });
+            
+            courseSearch.addEventListener('input', function() {
+                activeFilters.search = this.value;
+                applyFilters();
+            });
+            
+            const loadMoreBtn = document.querySelector('.load-more-btn');
+            loadMoreBtn.addEventListener('click', function() {
+                this.classList.add('loading');
+                
+                setTimeout(() => {
+                    this.classList.remove('loading');
+                    this.textContent = 'All Courses Loaded';
+                    this.disabled = true;
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>

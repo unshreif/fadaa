@@ -1,0 +1,207 @@
+.coming-soon-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(90deg, #4ca5ff, #b673f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pulsate 2s ease-out infinite;
+}
+
+.coming-soon-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #61dafb, #764abc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.coming-soon-subtitle {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin-bottom: 3rem;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.5rem;
+}
+
+.countdown-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.countdown-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+}
+
+.subscribe-form {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.subscribe-input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    padding-right: 140px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    outline: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.subscribe-input::placeholder {
+    color: #64748b;
+}
+
+.subscribe-input:focus {
+    border-color: #4ca5ff;
+    box-shadow: 0 0 0 2px rgba(76, 165, 255, 0.3);
+}
+
+.subscribe-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    padding: 0 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #4ca5ff, #b673f8);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.subscribe-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76, 165, 255, 0.4);
+}
+
+.social-links {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #94a3b8;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.back-home {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-home i {
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+
+.back-home:hover {
+    color: #fff;
+}
+
+.particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .coming-soon-title {
+        font-size: 2.5rem;
+    }
+    .countdown-container {
+        flex-wrap: wrap;
+    }
+    .countdown-item {
+        margin: 0.5rem;
+    }
+}

@@ -31,6 +31,10 @@ body {
   height: 100%;
   z-index: -1;
 }
+#particles-js {
+  z-index: 0 !important;
+  position: fixed;
+}
 
 .glass-nav {
   position: fixed;
@@ -56,6 +60,11 @@ body {
 .nav-logo {
   display: flex;
   align-items: center;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .logo-text {
@@ -143,10 +152,19 @@ body {
 
 .menu-toggle .bar {
   width: 25px;
-  height: 2px;
-  color: var(--text-color);
-  background: var(--text-color);
-  transition: 0.3s;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+  border-radius: 2px;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  transform: rotate(-45deg);
 }
 
 .welcome-container {
@@ -393,12 +411,10 @@ body {
 .menu-toggle .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
-    color: var(--text-color);
+    background-color: var(--primary-color);
     margin: 5px 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    border-radius: 3px;
-    box-shadow: 0 0 5px rgba(12, 255, 225, 0.5);
+    transition: transform 0.3s ease;
+    border-radius: 2px;
 }
 
 .menu-toggle.active .bar:nth-child(1) {
@@ -409,16 +425,51 @@ body {
     transform: rotate(-45deg);
 }
 
+.mobile-visible {
+    display: none;
+}
+
 @media (max-width: 768px) {
   .nav-links a {
     display: none;
   }
   
   .menu-toggle {
-    display: flex;
-    color: #fff;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    z-index: 1010;
+    cursor: pointer;
   }
-  
+
+  .menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-toggle.active {
+    background: transparent;
+  }
+
+  .menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+    width: 30px;
+  }
+
+  .menu-toggle.active .bar:nth-child(2) {
+    transform: rotate(-45deg);
+    width: 30px;
+  }
+
   .welcome-title {
     font-size: 40px;
   }
@@ -535,34 +586,46 @@ body {
         justify-content: center;
         margin-top: 15px;
     }
-    
-    .menu-toggle {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 20px;
-        z-index: 1001;
-        color: #fff;
-        
-    }
-    
-    .menu-toggle .bar {
-        width: 28px;
-        height: 3px;
-        background-color: white;
-        color: var(--text-color);
-        border-radius: 3px;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-    
-    .menu-toggle.active .bar:nth-child(1) {
-        transform: translateY(8.5px) rotate(45deg);
-    }
-    
-    .menu-toggle.active .bar:nth-child(2) {
-        transform: rotate(-45deg);
-    }
 }
-a{
-  text-decoration: none;
+
+/* Career Outcomes Section */
+.career-outcomes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.career-outcome-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 50px;
+  width: 300px;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.career-outcome-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(12, 255, 225, 0.2);
+  border-color: rgba(12, 255, 225, 0.3);
+}
+
+@media (max-width: 768px) {
+  .career-outcomes-container {
+    gap: 20px;
+    padding: 30px 15px;
+  }
+  
+  .career-outcome-card {
+    width: 100%;
+    max-width: 340px;
+    padding: 20px;
+  }
 }
