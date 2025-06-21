@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     showSection('home');
 
-    // Button event listeners
     const getStartedBtn = document.getElementById('getStartedBtn');
     if (getStartedBtn) {
         getStartedBtn.addEventListener('click', function() {
