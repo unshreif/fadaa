@@ -629,3 +629,13 @@ body {
     padding: 20px;
   }
 }
+
+#home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px; /* to avoid nav overlap */
+  box-sizing: border-box;
+}
