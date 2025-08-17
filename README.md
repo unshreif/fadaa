@@ -1,75 +1,25 @@
-# FADA' - Your Gateway to Programming Excellence
+# 🚧 FADA' - Under Maintenance 🚧  
 
-FADA' is a modern web platform designed to help developers and programming enthusiasts enhance their coding skills through comprehensive resources and expert tutorials.
-
-## 🌟 Features
-
-- Modern, responsive design with glass-morphism UI
-- Interactive particle effects and animations
-- Comprehensive programming resources
-- Blog section for latest updates and tutorials
-- Open-source project welcoming community contributions
-
-## 🚀 Getting Started
-
-1. Clone the repository:
-```bash
-git clone https://github.com/unshreif/fadaa.git
-```
-
-2. Open `index.html` in your web browser to view the project locally.
-
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- GSAP (GreenSock Animation Platform)
-- Three.js
-- Particles.js
-- Font Awesome
-- Google Fonts (Inter & Space Grotesk)
-
-## 📁 Project Structure
-
-```
-fadaa/
-├── Pages/           # Additional HTML pages
-├── css/            # Stylesheet files
-├── js/             # JavaScript files
-├── images/         # Image assets
-├── index.html      # Main entry point
-├── style.css       # Main stylesheet
-└── script.js       # Main JavaScript file
-```
-
-## 🤝 Contributing
-
-We welcome contributions from the community! To contribute:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is open source and available under the MIT License.
-
-## 👥 Authors
-
-- **FADA' Team** - *Initial work*
-
-## 🙏 Acknowledgments
-
-- Thanks to all contributors who have helped shape this project
-- Special thanks to the open-source community for their amazing tools and libraries
-
-## 📞 Contact
-
-For any queries or suggestions, please open an issue in the GitHub repository.
+> **Status:** Currently under maintenance.  
+We’re working hard to improve and enhance **FADA'**, but in the meantime, contributions are always welcome! 💡  
 
 ---
 
-Made with ❤️ by the FADA' Team 
+## 🤝 Contributing  
+💡 **We’re looking for volunteers!**  
+If you’d like to help improve **FADA'**, feel free to contribute
+
+## 🛠️ Tech Stack  
+- **Frontend:** HTML, CSS, SCSS, JavaScript, Angular  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB
+
+## Join the Team
+If you’d like to be part of the FADA' Team, simply:
+
+Open an issue in the repository, or
+
+Leave a comment in the Discussions section
+
+We’ll be happy to have you on board! 💙
+
