@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NgForOf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 import {RouterLink} from '@angular/router';
 
 declare function particlesJS(tagId: string, params: object): void;
@@ -8,6 +8,7 @@ declare function particlesJS(tagId: string, params: object): void;
   selector: 'app-backend',
   imports: [
     NgForOf,
+    NgIf,
     RouterLink
   ],
   templateUrl: './backend.html',

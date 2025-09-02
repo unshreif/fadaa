@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Backednd } from './backend';
+import { Backend } from './backend';
 
-describe('Backednd', () => {
-  let component: Backednd;
-  let fixture: ComponentFixture<Backednd>;
+describe('Backend', () => {
+  let component: Backend;
+  let fixture: ComponentFixture<Backend>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Backednd]
+      imports: [Backend]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Backednd);
+    fixture = TestBed.createComponent(Backend);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
