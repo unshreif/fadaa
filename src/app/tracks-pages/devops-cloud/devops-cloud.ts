@@ -33,7 +33,7 @@ export class DevopsCloud {
     stats: [
       { value: '32%', label: 'Job Growth' },
       { value: '$115K', label: 'Avg. Salary' },
-      { value: '17+', label: 'Difficulty Level' }
+      { value: '80+', label: 'Difficulty Level' }
     ],
     roadmapIntro: 'Your step-by-step journey to becoming a DevOps and cloud expert',
     roadmap: [
