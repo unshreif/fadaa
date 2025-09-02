@@ -35,7 +35,7 @@ export class Backend {
     stats: [
       { value: '22%', label: 'Job Growth' },
       { value: '$85K', label: 'Avg. Salary' },
-      { value: '18+', label: 'Difficulty Level' }
+      { value: '80+', label: 'Difficulty Level' }
     ],
     roadmapIntro: 'Your step-by-step journey to becoming a backend developer',
     roadmap: [
