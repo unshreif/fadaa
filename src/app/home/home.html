@@ -1,0 +1,31 @@
+<section id="home" >
+  <div class="welcome-container">
+    <div class="welcome-content">
+      <h1 class="welcome-title">Welcome to <span class="highlight">FADA'</span></h1>
+      <p class="welcome-subtitle">Your journey to programming excellence begins here</p>
+      <div class="welcome-cta-container">
+        <button class="welcome-cta primary" [routerLink]="['/tracks']">
+          <span>Get Started</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <button class="welcome-cta secondary" (click)="navigateToBlog()">
+          <span>Our Blog</span>
+          <i class="fas fa-book-open"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="github-repo-stats">
+    <a href="https://github.com/unshreif/fadaa" target="_blank" class="repo-card">
+      <div class="repo-header">
+        <i class="fab fa-github"></i>
+        <span>Open Source</span>
+      </div>
+      <div class="repo-name">unshreif/fadaa</div>
+      <div class="repo-action">
+        <span>Contribute on GitHub</span>
+        <i class="fas fa-external-link-alt"></i>
+      </div>
+    </a>
+  </div>
+</section>

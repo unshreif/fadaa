@@ -1,0 +1,146 @@
+<div id="particles-js" class="particles-container"></div>
+
+<section class="track-hero">
+  <div class="track-container">
+    <div class="track-header">
+      <div class="track-badge">
+        <div class="icon-wrapper">
+          <i class="fas fa-brain"></i>
+        </div>
+      </div>
+      <h1>{{ trackData.title }}</h1>
+      <div class="accent-line"></div>
+      <p class="track-tagline">{{ trackData.tagline }}</p>
+      <div class="track-meta">
+        <div class="meta-item" *ngFor="let meta of trackData.meta">
+          <i [class]="meta.icon"></i>
+          <span>{{ meta.text }}</span>
+        </div>
+      </div>
+      <div class="enroll-now">
+        <button class="enroll-btn">
+          <span>Enroll Now</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="track-overview">
+  <div class="track-container">
+    <div class="overview-grid">
+      <div class="overview-content">
+        <h2>Track <span class="highlight">Overview</span></h2>
+        <p>{{ trackData.overview[0] }}</p>
+        <p>{{ trackData.overview[1] }}</p>
+        <div class="skill-tags">
+          <div class="tag" *ngFor="let skill of trackData.skills">{{ skill }}</div>
+        </div>
+      </div>
+      <div class="overview-stats">
+        <div class="stat-card" *ngFor="let stat of trackData.stats">
+          <div class="stat-value">{{ stat.value }}</div>
+          <div class="stat-label">{{ stat.label }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="roadmap-section">
+  <div class="track-container">
+    <h2>Learning <span class="highlight">Roadmap</span></h2>
+    <p class="section-intro">{{ trackData.roadmapIntro }}</p>
+    <div class="roadmap">
+      <div class="roadmap-phase" *ngFor="let phase of trackData.roadmap">
+        <div class="phase-header">
+          <div class="phase-number">{{ phase.number }}</div>
+          <h3>{{ phase.title }}</h3>
+        </div>
+        <div class="phase-content">
+          <p>{{ phase.description }}</p>
+          <div class="phase-topics">
+            <div class="topic" *ngFor="let topic of phase.topics">
+              <i class="fas fa-check-circle"></i>
+              <span>{{ topic }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="courses-section">
+  <div class="track-container">
+    <div class="section-header">
+      <h2>Track <span class="highlight">Courses</span></h2>
+      <p class="section-intro">{{ trackData.coursesIntro }}</p>
+      <div class="accent-line"></div>
+    </div>
+    <div class="external-courses-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; align-items: stretch;">
+      <div class="external-course-card course-item" *ngFor="let course of visibleCourses" [attr.data-categories]="course.category" style="display: flex; flex-direction: column; height: 100%; min-height: 280px;">
+        <div class="card-top">
+          <div class="course-platform">
+            <span>{{ course.platform }}</span>
+          </div>
+          <div class="course-rating">
+            <i class="fas fa-star"></i>
+            <span>{{ course.rating }}</span>
+          </div>
+        </div>
+        <div class="card-content" style="flex: 1; display: flex; flex-direction: column;">
+          <h3>{{ course.title }}</h3>
+          <p>{{ course.description }}</p>
+        </div>
+        <div class="card-footer">
+          <a [href]="course.link" target="_blank" class="card-button">
+            <span>Go to Course</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="show-more-container" style="z-index: 101; position: relative;" *ngIf="trackData.courses.length > coursesPerPage">
+    <button class="show-more-btn" id="showMoreBtn" type="button" style="cursor: pointer;" (click)="toggleCourses()">
+      {{ showMoreText }} <i [class]="showMoreIcon"></i>
+    </button>
+  </div>
+</section>
+<section class="career-section">
+  <div class="track-container">
+    <h2>Career <span class="highlight">Outcomes</span></h2>
+    <p class="section-intro">{{ trackData.careerIntro }}</p>
+    <div class="careers-grid">
+      <div class="career-card" *ngFor="let career of trackData.careers">
+        <div class="career-icon">
+          <i [class]="career.icon"></i>
+        </div>
+        <h3>{{ career.title }}</h3>
+        <p>{{ career.description }}</p>
+        <div class="salary-range">
+          <span>{{ career.salary }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="enroll-cta">
+  <div class="track-container">
+    <div class="cta-wrapper">
+      <div class="cta-content">
+        <h2>Ready to Start Your <span class="highlight">Data Science Journey?</span></h2>
+        <p>{{ trackData.ctaText }}</p>
+      </div>
+      <div class="cta-buttons">
+        <button class="btn-primary" [routerLink]="['/coming-soon']">
+          <span>Enroll Now</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <button class="btn-outline" [routerLink]="['/coming-soon']">
+          <span>Download Syllabus</span>
+          <i class="fas fa-file-download"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 600px;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.error-code {
+  font-size: 8rem;
+  font-weight: 800;
+  color: #0072ff;
+  margin-bottom: 1rem;
+}
+
+.error-title {
+  font-size: 2.5rem;
+  color: #0072ff;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: gray;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+

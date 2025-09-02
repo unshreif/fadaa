@@ -1,0 +1,19 @@
+<nav class="glass-nav">
+  <div class="nav-logo">
+    <a [routerLink]="['/']"><div class="logo-text">FADA'</div></a>
+  </div>
+  <div class="nav-links" [class.active]="menuOpen">
+    <a [routerLink]="['/']" class="nav-link" id="homeBtn" (click)="navigateToHome()"><span>Home</span></a>
+    <a [routerLink]="['/about']" class="nav-link" id="aboutBtn" (click)="navigateToAbout()"><span>About</span></a>
+    <div class="cta-group">
+      <button class="cta-button" (click)="navigateToJoin()">
+        <span>Join Now</span>
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+  <div class="menu-toggle" [class.active]="menuOpen" (click)="menuOpen = !menuOpen">
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</nav>

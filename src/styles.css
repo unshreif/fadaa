@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/blockletter');
+:root {
+  --primary-color: #0cffe1;
+  --secondary-color: #7000ff;
+  --dark-bg: #0a0e17;
+  --glass-bg: rgba(13, 21, 34, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --text-color: #e6f1ff;
+  --accent-color: #ff3e7f;
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#particles-js {
+  z-index: 0 !important;
+  position: fixed;
+}
+

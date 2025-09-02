@@ -1,0 +1,47 @@
+<div id="particles-js" class="particles-container"></div>
+
+<section id="getstarted">
+  <section class="tracks-hero">
+    <div class="tracks-container">
+      <div class="tracks-header">
+        <h1>Choose Your <span class="highlight">Learning Path</span></h1>
+        <div class="accent-line"></div>
+        <p class="tracks-tagline">Select a technology track aligned with your interests and career goals</p>
+      </div>
+    </div>
+  </section>
+  <section class="tracks-section">
+    <div class="tracks-container">
+      <div class="tracks-grid">
+        <div *ngFor="let track of tracks" class="track-card">
+          <div class="tech-icon {{ track.iconClass }}">
+            <i class="fas {{ track.icon }}"></i>
+          </div>
+          <div class="track-content">
+            <h2>{{ track.title }}</h2>
+            <p>{{ track.description }}</p>
+          </div>
+          <a [routerLink]="[track.route]" class="track-cta">
+            <span>Start Learning</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <div class="hover-effect"></div>
+        </div>
+
+        <div class="track-card coming-soon">
+          <div class="tech-icon more">
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="track-content">
+            <h2>More Tracks</h2>
+            <p>We're constantly adding new learning paths. Stay tuned for more exciting technology tracks or add it your own from our Github repo!</p>
+          </div>
+          <a href="#" class="track-cta disabled">
+            <span>Coming Soon</span>
+          </a>
+          <div class="hover-effect"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
