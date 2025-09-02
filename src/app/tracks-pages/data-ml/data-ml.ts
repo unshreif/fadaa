@@ -33,7 +33,7 @@ export class DataMl {
     stats: [
       { value: '35%', label: 'Job Growth' },
       { value: '$120K', label: 'Avg. Salary' },
-      { value: '18+', label: 'Difficulty Level' }
+      { value: '90+', label: 'Difficulty Level' }
     ],
     roadmapIntro: 'Your step-by-step journey to becoming a data scientist and ML engineer',
     roadmap: [
