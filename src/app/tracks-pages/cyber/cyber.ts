@@ -32,7 +32,7 @@ export class Cyber {
     stats: [
       { value: '33%', label: 'Job Growth' },
       { value: '$105K', label: 'Avg. Salary' },
-      { value: '17+', label: 'Difficulty Level' }
+      { value: '90+', label: 'Difficulty Level' }
     ],
     roadmapIntro: 'Your step-by-step journey to becoming a cyber security professional',
     roadmap: [
