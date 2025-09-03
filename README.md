@@ -1,30 +1,29 @@
-# 🚀 FADA' - Modern Web Application
+# 🚀 FADA' - Your modern tech resources website
 
-> **Status:** Currently under active development and maintenance.  
-> We're working hard to improve and enhance **FADA'**, and we welcome your contributions! 💡
-
-FADA' is a modern web application built with Angular, Node.js, and MongoDB, designed to provide [brief description of what FADA' does].
+FADA' is a modern web platform built with Angular, CSS, and Three js, designed to help developers and programming enthusiasts enhance their coding skills through comprehensive resources and expert tutorials.
 
 ## ✨ Features
 
 - **Modern UI/UX** built with Angular and SCSS
 - **Responsive Design** works on all devices
-- **Scalable Backend** powered by Node.js and Express
-- **MongoDB** for flexible data storage
-- [Add more key features]
+- **Minimal & Clean UI** – Designed for focus and simplicity.
+- **Fast & Lightweight** – Optimized for performance with minimal load times.
+- **Open Source** – Fully transparent and community-driven.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
-- Angular CLI (v12 or higher)
-- MongoDB (v4.4 or higher)
+- Node.js (v16 or higher)
+- Angular CLI (v16 or higher)
+- npm (comes with Node.js) or yarn for dependency management
+- Git for version control
+- A code editor (recommended: webstorm)
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/fadaa.git
+   git clone https://github.com/unshreif/fadaa.git
    cd fadaa
    ```
 
@@ -39,14 +38,7 @@ FADA' is a modern web application built with Angular, Node.js, and MongoDB, desi
    npm install
    ```
 
-3. **Environment Setup**
-   Create a `.env` file in the root directory and add your environment variables:
-   ```
-   PORT=3000
-   MONGODB_URI=your_mongodb_connection_string
-   ```
-
-4. **Start the application**
+3. **Start the application**
    ```bash
    # Start frontend development server
    ng serve
@@ -58,7 +50,7 @@ FADA' is a modern web application built with Angular, Node.js, and MongoDB, desi
    The application will be available at `http://localhost:4200`
 
 ## 🛠️ Tech Stack  
-- **Frontend:** HTML5, CSS3, SCSS, TypeScript, Angular  
+- **Frontend:** HTML5, CSS3, CSS, TypeScript, Angular  
 
 ## 🤝 Contributing
 
@@ -76,13 +68,9 @@ Please read our [Code of Conduct](CODE_OF_CONDUCT.md) to understand the standard
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-- [List any acknowledgments, inspirations, or credits]
-
 ## 📬 Get Involved
 We'd love to have you on board! Here's how you can join the FADA' Team:
 - Open an issue in the repository
 - Leave a comment in the Discussions section
-- Reach out to us at [your-email@example.com]
 
 We're excited to collaborate with you! 💙
