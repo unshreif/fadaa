@@ -20,7 +20,8 @@ interface Course {
     NgIf,
     RouterLink
   ],
-  styleUrls: ['./fullstack.css']
+  styleUrls: ['../../app.css'],
+  standalone: true
 })
 export class Fullstack {
   coursesPerPage = 4;

@@ -13,7 +13,7 @@ declare function particlesJS(tagId: string, params: object): void;
   ],
   templateUrl: './backend.html',
   standalone: true,
-  styleUrls: ['./backend.css']
+  styleUrls: ['../../app.css']
 })
 export class Backend {
   trackData = {
@@ -35,7 +35,7 @@ export class Backend {
     stats: [
       { value: '22%', label: 'Job Growth' },
       { value: '$85K', label: 'Avg. Salary' },
-      { value: '18+', label: 'Difficulty Level' }
+      { value: '80+', label: 'Difficulty Level' }
     ],
     roadmapIntro: 'Your step-by-step journey to becoming a backend developer',
     roadmap: [

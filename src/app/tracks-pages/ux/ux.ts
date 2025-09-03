@@ -20,7 +20,7 @@ interface Course {
     NgForOf,
     RouterLink
   ],
-  styleUrls: ['./ux.css']
+  styleUrls: ['../../app.css'],
 })
 export class Ux {
   coursesPerPage = 4;

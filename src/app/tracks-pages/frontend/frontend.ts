@@ -18,7 +18,7 @@ interface Course {
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './frontend.html',
-  styleUrls: ['./frontend.css']
+  styleUrls: ['../../app.css']
 })
 export class Frontend implements OnInit {
    _expanded = false;
